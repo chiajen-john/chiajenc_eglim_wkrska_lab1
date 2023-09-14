@@ -1,1 +1,5 @@
-sdx_export_metadata
+sdx_export_metadata/
+.metadata/
+IDE.log
+.analytics
+
