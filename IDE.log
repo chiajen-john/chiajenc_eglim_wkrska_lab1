@@ -1,0 +1,25 @@
+15:16:22 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/temp_xsdb_launch_script.tcl
+15:16:22 INFO  : Registering command handlers for Vitis TCF services
+15:16:23 INFO  : Platform repository initialization has completed.
+15:16:27 INFO  : XSCT server has started successfully.
+15:16:27 INFO  : Successfully done setting XSCT server connection channel  
+15:16:27 INFO  : plnx-install-location is set to ''
+15:16:27 INFO  : Successfully done setting workspace for the tool. 
+15:16:27 INFO  : Successfully done query RDI_DATADIR 
+15:23:16 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/temp_xsdb_launch_script.tcl
+15:23:16 INFO  : Registering command handlers for Vitis TCF services
+15:23:20 INFO  : Platform repository initialization has completed.
+15:23:26 INFO  : XSCT server has started successfully.
+15:23:44 INFO  : plnx-install-location is set to ''
+15:23:44 INFO  : Successfully done setting XSCT server connection channel  
+15:23:44 INFO  : Successfully done query RDI_DATADIR 
+15:23:44 INFO  : Successfully done setting workspace for the tool. 
+15:23:55 ERROR : The following application project(s) included in the system project 'mmm_vadd_dfx_system' are missing from the workspace.
+Please import the applications using 'File -> Import -> Existing Projects into Workspace' option or delete the application project entries from the system project settings editor.
+
+ 1. expla_kernels
+15:27:08 INFO  : Build configuration of 'mmm_vadd_dfx_system' is updated to 'Hardware'
+15:27:08 INFO  : Build configuration of system project is automatically updated to 'Hardware'.
+15:27:08 INFO  : Build configuration of 'mmm_vadd_dfx_system_hw_link' is updated to 'Hardware'
+15:27:08 INFO  : Build configuration of 'mmm_kernels' is updated to 'Hardware'
+15:27:08 INFO  : Build configuration of 'vadd_kernels' is updated to 'Hardware'

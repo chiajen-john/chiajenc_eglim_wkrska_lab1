@@ -7,7 +7,6 @@
 		<project>mmm_vadd_dfx</project>
 		<project>mmm_kernels</project>
 		<project>vadd_kernels</project>
-		<project>expla_kernels</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

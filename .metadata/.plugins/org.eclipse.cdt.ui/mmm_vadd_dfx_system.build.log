@@ -1,0 +1,65 @@
+16:12:32 **** Build of configuration Hardware for project mmm_vadd_dfx_system ****
+make all 
+Running Package Step for the System Project.
+/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin/v++ --package --config package.cfg ../../mmm_vadd_dfx_system_hw_link/Hardware/binary_container_mmm.xclbin -o binary_container_mmm.xclbin
+/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin/v++ --package --config package.cfg  ../../mmm_vadd_dfx_system_hw_link/Hardware/binary_container_mmm.xclbin -o binary_container_mmm.xclbin
+Option Map File Used: '/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data/vitis/vpp/optMap.xml'
+
+****** v++ v2021.1 (64-bit)
+  **** SW Build 3246112 on 2021-06-09-14:19:56
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ package can be found at:
+	Reports: /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package.build/reports/package
+	Log files: /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package.build/logs/package
+Running Dispatch Server on port: 39547
+INFO: [v++ 60-1548] Creating build summary session with primary output /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/binary_container_mmm.xclbin.package_summary, at Sun Sep 17 16:12:48 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Sep 17 16:12:48 2023
+Running Rule Check Server on port:44662
+INFO: [v++ 60-1315] Creating rulecheck session with output '/scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package.build/reports/package/v++_package_binary_container_mmm_guidance.html', at Sun Sep 17 16:12:51 2023
+INFO: [v++ 60-895]   Target platform: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/cmu_u96v2_dfx_full.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/hw/cmu_u96_base_dfx_202110_1.xsa'
+INFO: [v++ 60-2256] Packaging for hardware
+INFO: [v++ 82-1025] generating bootimage
+
+
+****** Xilinx Bootgen v2021.1
+  **** Build date : Jun 10 2021-20:11:31
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+[WARNING]: [fsbl_config] a53_x64 | a53_x32 | r5_single | r5_dual is no more supported. Use 'destination_cpu' attribute for bootloader partition
+
+[INFO]   : Bootimage generated successfully
+
+INFO: [v++ 82-1140] Deleting existing - /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package/sd_card/Image
+INFO: [v++ 82-1011] creating sd_card directory
+INFO: [v++ 82-3528] mkfsimage command run: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/scripts/vitis/util/mkfsImage.sh -s /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package/sd_card/ -o /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/package/sd_card.img -e /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full_v2.0/sw/cmu_u96v2_dfx_full/linux_domain/rootfs/rootfs.ext4
+FATSIZE:1024
+fat_start:63
+fat_end:2096639
+fat_sector:2096577
+ext4_start:0
+ext4_sector:4574932
+EXT4SIZE:2560
+TOTALSIZE:3584
+dummy_ext4_sector:667948
+sd_card_fat_start:2048
+sd_card_ext4_start:2000896
+dummy_ext4_start:6575828
+2096577+0 records in
+2096577+0 records out
+1073447424 bytes (1.1 GB) copied, 12.4454 s, 86.3 MB/s
+4574932+0 records in
+4574932+0 records out
+2342365184 bytes (2.3 GB) copied, 242.908 s, 9.6 MB/s
+667948+0 records in
+667948+0 records out
+341989376 bytes (342 MB) copied, 21.6736 s, 15.8 MB/s
+INFO: [v++ 60-2460] Successfully copied a temporary xclbin to the output xclbin: /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/binary_container_mmm.xclbin
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/mmm_vadd_dfx_system/Hardware/binary_container_mmm.xclbin.package_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 5m 27s
+INFO: [v++ 60-1653] Closing dispatch client.
+
+16:18:04 Build Finished (took 5m:31s.530ms)
+

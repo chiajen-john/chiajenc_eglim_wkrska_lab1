@@ -171,6 +171,10 @@
                             							
                             <tool id="com.xilinx.ide.accel.tool.gcc_compiler.hw.aarch64.403519687" name="GCC Host Compiler (ARMv8-A for A53/A72 - 64 bit)" superClass="com.xilinx.ide.accel.tool.gcc_compiler.hw.aarch64">
                                 								
+                                <option id="com.xilinx.ide.accel.toolchain.hw.gcc_compiler.option.debug.aarch64.1136756515" superClass="com.xilinx.ide.accel.toolchain.hw.gcc_compiler.option.debug.aarch64" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.option.optimization.level.1003692820" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+                                								
                                 <inputType id="com.xilinx.ide.accel.managedbuild.input.cpp.aarch64.1765087881" superClass="com.xilinx.ide.accel.managedbuild.input.cpp.aarch64"/>
                                 								
                                 <inputType id="com.xilinx.ide.accel.managedbuild.input.c.aarch64.1474362801" superClass="com.xilinx.ide.accel.managedbuild.input.c.aarch64"/>

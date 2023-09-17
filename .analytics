@@ -1,0 +1,11 @@
+timestamp=[2023-09-17 15:16:21], mode=WORKBENCH_START, duration=0:00:14.049, duration_ms=14049, data={}
+timestamp=[2023-09-17 15:16:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.505, duration_ms=505, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-09-17 15:16:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.090, duration_ms=1090, data={}
+timestamp=[2023-09-17 15:23:14], mode=WORKBENCH_START, duration=0:00:28.757, duration_ms=28757, data={}
+timestamp=[2023-09-17 15:23:15], mode=WORKBENCH_UI_INIT, duration=0:00:01.426, duration_ms=1426, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-09-17 15:23:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.333, duration_ms=4333, data={}
+timestamp=[2023-09-17 15:31:28], mode=BUILD, duration=0:03:50.364, duration_ms=230364, data={name=mmm_kernels, configuration=Hardware, clean_build=false}
+timestamp=[2023-09-17 15:31:37], mode=BUILD, duration=0:00:08.807, duration_ms=8807, data={name=mmm_vadd_dfx, configuration=Hardware, clean_build=false}
+timestamp=[2023-09-17 15:41:54], mode=BUILD, duration=0:10:15.762, duration_ms=615762, data={name=vadd_kernels, configuration=Hardware, clean_build=false}
+timestamp=[2023-09-17 16:12:32], mode=BUILD, duration=0:30:37.158, duration_ms=1837158, data={name=mmm_vadd_dfx_system_hw_link, configuration=Hardware, clean_build=false}
+timestamp=[2023-09-17 16:18:04], mode=BUILD, duration=0:05:31.550, duration_ms=331550, data={name=mmm_vadd_dfx_system, configuration=Hardware, clean_build=false}

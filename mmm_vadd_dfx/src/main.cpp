@@ -83,12 +83,15 @@ int main(int argc, char* argv[]) {
 
         float *ptr_a, *ptr_b, *ptr_result;
 
+        int mmm_size = (argc>3) ? atoi(argv[argc-1]) : MMM_DIM;
+        std::cout << "Size = " << mmm_size << std::endl;
+
         program_kernel(cl_obj, mmm_obj);
-        mmm_allocate_mem(cl_obj, mmm_obj, &ptr_a, &ptr_b, &ptr_result, MMM_DIM * MMM_DIM * sizeof(float));
-        initialize_memory_fp(ptr_a, MMM_DIM * MMM_DIM);
-        initialize_memory_fp(ptr_b, MMM_DIM * MMM_DIM);
-        mmm_run_kernel(cl_obj, mmm_obj, MMM_DIM);
-        int match = mmm_check(ptr_a, ptr_b, ptr_result, MMM_DIM);
+        mmm_allocate_mem(cl_obj, mmm_obj, &ptr_a, &ptr_b, &ptr_result, mmm_size * mmm_size * sizeof(float));
+        initialize_memory_fp(ptr_a, mmm_size * mmm_size);
+        initialize_memory_fp(ptr_b, mmm_size * mmm_size);
+        mmm_run_kernel(cl_obj, mmm_obj, mmm_size);
+        int match = mmm_check(ptr_a, ptr_b, ptr_result, mmm_size);
         std::cout << "MMM TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
         mmm_deallocate_mem(cl_obj, mmm_obj, ptr_a, ptr_b, ptr_result);
     }
