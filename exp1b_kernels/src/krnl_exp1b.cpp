@@ -26,7 +26,7 @@ void krnl_exp1b(const float *in,        // Read-Only Matrix
         int size                      // Dimension in integer
 ) 
     {
-        unsigned int v_buffer[BUFFER_SIZE];   // Local memory to store vector
+        float v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
 	    for (int i = 0; i < size; i++) { // iterates columns
             #pragma HLS LOOP_TRIPCOUNT min=c_num max=c_num
