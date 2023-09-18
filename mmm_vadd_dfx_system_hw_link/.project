@@ -5,7 +5,11 @@
 	<projects>
 		<project>mmm_kernels</project>
 		<project>vadd_kernels</project>
-		<project>expla_kernels</project>
+		<project>exp1a_kernels</project>
+		<project>exp1b_kernels</project>
+		<project>exp2a_kernels</project>
+		<project>exp2b_kernels</project>
+		<project>exp3_kernels</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

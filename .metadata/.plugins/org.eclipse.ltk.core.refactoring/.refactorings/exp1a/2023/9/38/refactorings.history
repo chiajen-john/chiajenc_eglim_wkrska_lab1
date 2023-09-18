@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;exp1a/src/krnl_exp1a&apos; to &apos;krnl_exp1a.cpp&apos;" description="Rename resource &apos;krnl_exp1a&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/krnl_exp1a" name="krnl_exp1a.cpp" stamp="1695044072798" updateReferences="true"/>
+</session>

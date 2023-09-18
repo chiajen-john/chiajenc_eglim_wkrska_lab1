@@ -39,14 +39,22 @@
 #include "mmm_helper.h"
 #define MMM_DIM 128
 
+#include "exp1_helper.h"
+#include "exp2_helper.h"
+#include "exp3_helper.h"
+
 
 int main(int argc, char* argv[]) {
 
 	// Hard coding xclbin filenames, ignoring command line arguments
-    std::string xclbinFilename[3] = {
+    std::string xclbinFilename[7] = {
     		"binary_container_vadd.xclbin",
-    		"binary_container_mmm.xclbin"
-			// increase array size to add more container names
+    		"binary_container_mmm.xclbin",
+            "binary_container_exp1a.xclbin",
+            "binary_container_exp1b.xclbin",
+            "binary_container_exp2a.xclbin",
+            "binary_container_exp2b.xclbin",
+            "binary_container_exp3.xclbin"
     };
 
     cl_object cl_obj;
@@ -83,7 +91,7 @@ int main(int argc, char* argv[]) {
 
         float *ptr_a, *ptr_b, *ptr_result;
 
-        int mmm_size = (argc>3) ? atoi(argv[argc-1]) : MMM_DIM;
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
         std::cout << "Size = " << mmm_size << std::endl;
 
         program_kernel(cl_obj, mmm_obj);
@@ -96,10 +104,112 @@ int main(int argc, char* argv[]) {
         mmm_deallocate_mem(cl_obj, mmm_obj, ptr_a, ptr_b, ptr_result);
     }
 
+    // Exp 1a
+    {
+        read_xclbin(xclbinFilename[2], cl_obj.bins);
+
+        krnl_object xyz_obj;
+        xyz_obj.index = ?;
+        xyz_obj.name = "exp1a";
+
+        float *ptr_in;
+
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        std::cout << "Size = " << mmm_size << std::endl;
+
+        program_kernel(cl_obj, xyz_obj);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, mmm_size * mmm_size * sizeof(float));
+        initialize_memory_fp(ptr_in, mmm_size * mmm_size);
+        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
+    }
+
+    // Exp 1b
+    {
+        read_xclbin(xclbinFilename[3], cl_obj.bins);
+
+        krnl_object xyz_obj;
+        xyz_obj.index = ?;
+        xyz_obj.name = "exp1b";
+
+        float *ptr_in;
+
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        std::cout << "Size = " << mmm_size << std::endl;
+
+        program_kernel(cl_obj, xyz_obj);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, mmm_size * mmm_size * sizeof(float));
+        initialize_memory_fp(ptr_in, mmm_size * mmm_size);
+        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
+    }
+
+    // Exp 2a
+    {
+        read_xclbin(xclbinFilename[4], cl_obj.bins);
+
+        krnl_object xyz_obj;
+        xyz_obj.index = ?;
+        xyz_obj.name = "exp2a";
+
+        float *ptr_result;
+
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        std::cout << "Size = " << mmm_size << std::endl;
+
+        program_kernel(cl_obj, xyz_obj);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, mmm_size * mmm_size * sizeof(float));
+        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
+    }
+
+    // Exp 2b
+    {
+        read_xclbin(xclbinFilename[5], cl_obj.bins);
+
+        krnl_object xyz_obj;
+        xyz_obj.index = ?;
+        xyz_obj.name = "exp2b";
+
+        float *ptr_result;
+
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        std::cout << "Size = " << mmm_size << std::endl;
+
+        program_kernel(cl_obj, xyz_obj);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, mmm_size * mmm_size * sizeof(float));
+        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
+    }
+
+    // Exp 3
+    {
+        read_xclbin(xclbinFilename[6], cl_obj.bins);
+
+        krnl_object xyz_obj;
+        xyz_obj.index = ?;
+        xyz_obj.name = "exp3";
+
+        float *ptr_a, *ptr_b, *ptr_result;
+
+        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        std::cout << "Size = " << mmm_size << std::endl;
+
+        program_kernel(cl_obj, xyz_obj);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, MMM_DIM * MMM_DIM * sizeof(float));
+        initialize_memory_fp(ptr_a, MMM_DIM * MMM_DIM);
+        initialize_memory_fp(ptr_b, MMM_DIM * MMM_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        //int match = mmm_check(ptr_a, ptr_b, ptr_result, MMM_DIM);
+        //std::cout << "MMM TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
+        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_a, ptr_b, ptr_result);
+    }
+
+    
 #if 0
     // Reuse this template to continue to develop Part 4
     {
-        read_xclbin(xclbinFilename[?], cl_obj.bins);
+        read_xclbin(xclbinFilename[7], cl_obj.bins);
 
         krnl_object xyz_obj;
         xyz_obj.index = ?;

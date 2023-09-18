@@ -9,3 +9,9 @@ timestamp=[2023-09-17 15:31:37], mode=BUILD, duration=0:00:08.807, duration_ms=8
 timestamp=[2023-09-17 15:41:54], mode=BUILD, duration=0:10:15.762, duration_ms=615762, data={name=vadd_kernels, configuration=Hardware, clean_build=false}
 timestamp=[2023-09-17 16:12:32], mode=BUILD, duration=0:30:37.158, duration_ms=1837158, data={name=mmm_vadd_dfx_system_hw_link, configuration=Hardware, clean_build=false}
 timestamp=[2023-09-17 16:18:04], mode=BUILD, duration=0:05:31.550, duration_ms=331550, data={name=mmm_vadd_dfx_system, configuration=Hardware, clean_build=false}
+timestamp=[2023-09-18 09:32:35], mode=APP_CREATION, duration=0:00:01.259, duration_ms=1259, data={name=exp1a, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
+timestamp=[2023-09-18 09:38:42], mode=APP_CREATION, duration=0:00:00.242, duration_ms=242, data={name=exp1a_kernels, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
+timestamp=[2023-09-18 09:41:09], mode=APP_CREATION, duration=0:00:00.155, duration_ms=155, data={name=exp1b_kernels, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
+timestamp=[2023-09-18 09:41:23], mode=APP_CREATION, duration=0:00:00.145, duration_ms=145, data={name=exp2a_kernels, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
+timestamp=[2023-09-18 09:41:37], mode=APP_CREATION, duration=0:00:00.146, duration_ms=146, data={name=exp2b_kernels, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
+timestamp=[2023-09-18 09:41:49], mode=APP_CREATION, duration=0:00:00.149, duration_ms=149, data={name=exp3_kernels, project_type=sdk, os=NA, processor=Unknown, runtime=OpenCL, platform=cmu_u96v2_dfx_full, application_type=null}
