@@ -119,7 +119,7 @@ int main(int argc, char* argv[]) {
         program_kernel(cl_obj, xyz_obj);
         mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
         initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
     }
 
@@ -136,7 +136,7 @@ int main(int argc, char* argv[]) {
         program_kernel(cl_obj, xyz_obj);
         mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
         initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
     }
 
@@ -152,7 +152,7 @@ int main(int argc, char* argv[]) {
 
         program_kernel(cl_obj, xyz_obj);
         mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
     }
 
@@ -168,7 +168,7 @@ int main(int argc, char* argv[]) {
 
         program_kernel(cl_obj, xyz_obj);
         mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
     }
 
@@ -183,12 +183,10 @@ int main(int argc, char* argv[]) {
         float *ptr_a, *ptr_b, *ptr_result;
 
         program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, MMM_DIM * MMM_DIM * sizeof(float));
-        initialize_memory_fp(ptr_a, MMM_DIM * MMM_DIM);
-        initialize_memory_fp(ptr_b, MMM_DIM * MMM_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
-        //int match = mmm_check(ptr_a, ptr_b, ptr_result, MMM_DIM);
-        //std::cout << "MMM TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
+        initialize_memory_fp(ptr_a, EXP_DIM * EXP_DIM);
+        initialize_memory_fp(ptr_b, EXP_DIM * EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_a, ptr_b, ptr_result);
     }
 

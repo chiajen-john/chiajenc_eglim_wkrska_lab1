@@ -9,4 +9,4 @@ void exp_allocate_mem(cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_out,
 void exp_deallocate_mem(cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_out);
 
 // Set kernel arguments and execute it 
-void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj, int dim);
+void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj);

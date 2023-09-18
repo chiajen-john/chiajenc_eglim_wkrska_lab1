@@ -22,21 +22,20 @@ const unsigned int c_size = BUFFER_SIZE;
 const unsigned int c_num = DATA_DIM
 
 extern "C" {
-void krnl_exp1b(const float *in,        // Read-Only Matrix
-        int size                      // Dimension in integer
+void krnl_exp1b(const float *in        // Read-Only Matrix
 ) 
     {
         float v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
-	    for (int i = 0; i < size; i++) { // iterates columns
+	    for (int i = 0; i < DATA_DIM; i++) { // iterates columns
             #pragma HLS LOOP_TRIPCOUNT min=c_num max=c_num
             int num_chunks
-            for (int j = 0; j < size; j += BUFFER_SIZE) { // increments chunmk window
+            for (int j = 0; j < DATA_DIM; j += BUFFER_SIZE) { // increments chunmk window
                 #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
                 int chunk_size = BUFFER_SIZE;
                 read1: for (int k = 0; k < chunk_size; k++) {
                     #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
-                    v_buffer[k] = in[(i + ((j+k)*size))];
+                    v_buffer[k] = in[(i + ((j+k)*DATA_DIM))];
                 }
             }
         }

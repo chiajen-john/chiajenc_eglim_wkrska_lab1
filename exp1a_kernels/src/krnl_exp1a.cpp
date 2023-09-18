@@ -21,13 +21,12 @@ const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
 const unsigned int c_size = BUFFER_SIZE;
 
 extern "C" {
-void krnl_exp1a(const float *in,        // Read-Only Matrix
-        int size                      // Dimension in integer
+void krnl_exp1a(const float *in        // Read-Only Matrix
 ) 
     {
         float v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
-	    for (int i = 0; i < size*size; i += BUFFER_SIZE) {
+	    for (int i = 0; i < DATA_SIZE; i += BUFFER_SIZE) {
             #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
             int chunk_size = BUFFER_SIZE;
 

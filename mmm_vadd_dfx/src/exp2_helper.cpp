@@ -26,7 +26,7 @@ void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_ou
 }
 
 // Set kernel arguments and execute it
-void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj, int dim) {
+void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     cl_int err;
 
     // Copied directly from vadd example
@@ -37,7 +37,6 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj, int dim) {
     // Copied directly from vadd example
     int narg=0;
     OCL_CHECK(err, err = krnl_obj.krnl.setArg(narg++, *buf_out));
-    OCL_CHECK(err, err = krnl_obj.krnl.setArg(narg++, dim));
     
     std::cout << "Args Set" << std::endl;
 
