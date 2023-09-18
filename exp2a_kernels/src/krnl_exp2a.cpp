@@ -25,12 +25,13 @@ void krnl_exp2a(float *out,             // Output Result
         int size                      // Dimension in integer
 ) 
     {
-	    float v_buffer[BUFFER_SIZE];
-        // Init Buffer
-        int chunk_size = BUFFER_SIZE;
-        for (int b = 0; b < chunk_size; b++) {
-            v_buffer = 
+	    for (int i = 0; i < size*size; i += BUFFER_SIZE) {
+            #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
+            int chunk_size = BUFFER_SIZE;
+            read1: for (int j = 0; j < chunk_size; j++) {
+                #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
+                out[i+j] = 0xABC;
+            }
         }
-        return 0
     }
 }
