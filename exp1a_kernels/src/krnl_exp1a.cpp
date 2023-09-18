@@ -21,7 +21,7 @@ const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
 const unsigned int c_size = BUFFER_SIZE;
 
 extern "C" {
-void krnl_mmm(const float *in,        // Read-Only Matrix
+void krnl_exp1a(const float *in,        // Read-Only Matrix
         int size                      // Dimension in integer
 ) 
     {

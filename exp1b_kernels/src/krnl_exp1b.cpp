@@ -13,26 +13,31 @@
 
 // Update values when needed!!
 #define BUFFER_SIZE 256
-#define DATA_SIZE 4096 
+#define DATA_DIM 4096
+#define DATA_SIZE DATA_DIM*DATA_DIM
 
 //TRIPCOUNT identifier
-const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
+const unsigned int c_len = DATA_DIM / BUFFER_SIZE; // this MUST be a whole number
 const unsigned int c_size = BUFFER_SIZE;
+const unsigned int c_num = DATA_DIM
 
 extern "C" {
-void krnl_mmm(const float *in,        // Read-Only Matrix
+void krnl_exp1b(const float *in,        // Read-Only Matrix
         int size                      // Dimension in integer
 ) 
     {
         unsigned int v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
-	    for (int i = 0; i < size; i += BUFFER_SIZE) {
-            #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
-            int chunk_size = BUFFER_SIZE;
-
-            read1: for (int j = 0; j < chunk_size; j++) {
-                #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
-                v_buffer[j] = in[i + j];
+	    for (int i = 0; i < size; i++) { // iterates columns
+            #pragma HLS LOOP_TRIPCOUNT min=c_num max=c_num
+            int num_chunks
+            for (int j = 0; j < size; j += BUFFER_SIZE) { // increments chunmk window
+                #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
+                int chunk_size = BUFFER_SIZE;
+                read1: for (int k = 0; k < chunk_size; k++) {
+                    #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
+                    v_buffer[k] = in[(i + ((j+k)*size))];
+                }
             }
         }
     }

@@ -12,7 +12,7 @@
  */
 
 extern "C" {
-void krnl_mmm(float *out,             // Output Result
+void krnl_exp2a(float *out,             // Output Result
         int size                      // Dimension in integer
 ) 
     {

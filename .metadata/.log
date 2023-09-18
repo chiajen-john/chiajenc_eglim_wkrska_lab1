@@ -196,3 +196,54 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-09-18 09:41:49.212
 !MESSAGE Indexed 'exp3_kernels' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2023-09-18 12:12:41.892 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-09-18 12:14:02.633
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2023-09-18 12:14:16.897
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.813
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.813
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.814
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.819
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.820
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:39.820
+!MESSAGE XSCT Command: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:51.660
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:51.661
+!MESSAGE XSCT command with result: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Result: [null, ]. Thread: Thread-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:51.662
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-18 12:14:51.664
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data]. Thread: Worker-7: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-18 12:15:29.723
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-18 12:15:29.724
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-18 12:15:29.724
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType

@@ -22,6 +22,31 @@
           </computeUnits>
         </kernels>
       </binaryContainers>
+      <binaryContainers name="binary_container_exp1a">
+        <kernels name="krnl_exp1a" projectName="exp1a_kernels">
+          <computeUnits name="krnl_exp1a_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp1b">
+        <kernels name="krnl_exp1b" projectName="exp1b_kernels">
+          <computeUnits name="krnl_exp1b_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2a">
+        <kernels name="krnl_exp2a" projectName="exp2a_kernels">
+          <computeUnits name="krnl_exp2a_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2b">
+        <kernels name="krnl_exp2b" projectName="exp2b_kernels">
+          <computeUnits name="krnl_exp2b_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp3">
+        <kernels name="krnl_exp3" projectName="exp3_kernels">
+          <computeUnits name="krnl_exp3_1" slr=""/>
+        </kernels>
+      </binaryContainers>
     </configBuildOptions>
     <lastBuildOptions xsi:type="hwlink:LinkOptions">
       <binaryContainers name="binary_container_vadd">
@@ -68,6 +93,31 @@
           </computeUnits>
         </kernels>
       </binaryContainers>
+      <binaryContainers name="binary_container_exp1a">
+        <kernels name="krnl_exp1a" projectName="exp1a_kernels">
+          <computeUnits name="krnl_exp1a_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp1b">
+        <kernels name="krnl_exp1b" projectName="exp1b_kernels">
+          <computeUnits name="krnl_exp1b_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2a">
+        <kernels name="krnl_exp2a" projectName="exp2a_kernels">
+          <computeUnits name="krnl_exp2a_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2b">
+        <kernels name="krnl_exp2b" projectName="exp2b_kernels">
+          <computeUnits name="krnl_exp2b_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp3">
+        <kernels name="krnl_exp3" projectName="exp3_kernels">
+          <computeUnits name="krnl_exp3_1" slr=""/>
+        </kernels>
+      </binaryContainers>
     </configBuildOptions>
   </configuration>
   <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1447361641">
@@ -91,6 +141,21 @@
             <args name="size"/>
           </computeUnits>
         </kernels>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp1a">
+        <kernels name="krnl_exp1a" projectName="exp1a_kernels"/>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp1b">
+        <kernels name="krnl_exp1b" projectName="exp1b_kernels"/>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2a">
+        <kernels name="krnl_exp2a" projectName="exp2a_kernels"/>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp2b">
+        <kernels name="krnl_exp2b" projectName="exp2b_kernels"/>
+      </binaryContainers>
+      <binaryContainers name="binary_container_exp3">
+        <kernels name="krnl_exp3" projectName="exp3_kernels"/>
       </binaryContainers>
     </configBuildOptions>
     <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">

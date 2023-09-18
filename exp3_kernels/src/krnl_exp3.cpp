@@ -14,12 +14,12 @@
  */
 
 extern "C" {
-void krnl_mmm(const float *in1,  // Read-Only Matrix 1
+void krnl_exp3(const float *in1,  // Read-Only Matrix 1
         const float *in2,      // Read-Only Matrix 2
         float *out_r,          // Output Result
         int size                      // Dimension in integer
 ) 
     {
-	    return 0
+	    return 0;
     }
 }

@@ -39,6 +39,8 @@
 #include "mmm_helper.h"
 #define MMM_DIM 128
 
+#define EXP_DIM 4096
+
 #include "exp1_helper.h"
 #include "exp2_helper.h"
 #include "exp3_helper.h"
@@ -114,13 +116,10 @@ int main(int argc, char* argv[]) {
 
         float *ptr_in;
 
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        std::cout << "Size = " << mmm_size << std::endl;
-
         program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, mmm_size * mmm_size * sizeof(float));
-        initialize_memory_fp(ptr_in, mmm_size * mmm_size);
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
+        initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
     }
 
@@ -134,13 +133,10 @@ int main(int argc, char* argv[]) {
 
         float *ptr_in;
 
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        std::cout << "Size = " << mmm_size << std::endl;
-
         program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, mmm_size * mmm_size * sizeof(float));
-        initialize_memory_fp(ptr_in, mmm_size * mmm_size);
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
+        initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
+        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
     }
 
@@ -154,12 +150,9 @@ int main(int argc, char* argv[]) {
 
         float *ptr_result;
 
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        std::cout << "Size = " << mmm_size << std::endl;
-
         program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, mmm_size * mmm_size * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
+        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
     }
 
@@ -173,12 +166,9 @@ int main(int argc, char* argv[]) {
 
         float *ptr_result;
 
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        std::cout << "Size = " << mmm_size << std::endl;
-
         program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, mmm_size * mmm_size * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
+        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
+        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
     }
 
@@ -191,9 +181,6 @@ int main(int argc, char* argv[]) {
         xyz_obj.name = "exp3";
 
         float *ptr_a, *ptr_b, *ptr_result;
-
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        std::cout << "Size = " << mmm_size << std::endl;
 
         program_kernel(cl_obj, xyz_obj);
         mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, MMM_DIM * MMM_DIM * sizeof(float));
