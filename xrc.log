@@ -1,0 +1,71 @@
+Tue Sep 19 15:01:09 2023: Server was asked to start on port: '42095'
+Tue Sep 19 15:01:09 2023: Server is using token UUID: 'a05123ff-fb2c-4ebf-bf0c-8abdda0db4c0'
+Tue Sep 19 15:01:09 2023: Attempting to start server on port '42095'
+Tue Sep 19 15:01:09 2023: XRC main fifo: created main fifo '/tmp/xrcmaina05123ff-fb2c-4ebf-bf0c-8abdda0db4c0', fd read = 11
+Tue Sep 19 15:01:09 2023: Running Rule Check Server
+Tue Sep 19 15:01:09 2023: Version 1.6.1
+Tue Sep 19 15:01:11 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 15:01:11 2023: EXCHANGE_TOKEN received, server token: a05123ff-fb2c-4ebf-bf0c-8abdda0db4c0, passed token: a05123ff-fb2c-4ebf-bf0c-8abdda0db4c0
+Tue Sep 19 16:44:44 2023: SESSION_MGR: creating session with session uuid: '6637e1bf-b84b-4379-b37b-36c7302fc400' and name 'Emulation-SW'
+Tue Sep 19 16:45:04 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:46:39 2023: SESSION_MGR: closing session for UUID '6637e1bf-b84b-4379-b37b-36c7302fc400' with name 'Emulation-SW'
+Tue Sep 19 16:46:39 2023: SESSION_MGR: creating session with session uuid: '0e04e963-8dac-4393-9a2d-a25e8795c7bb' and name 'Emulation-SW'
+Tue Sep 19 16:46:55 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:47:16 2023: SESSION_MGR: closing session for UUID '0e04e963-8dac-4393-9a2d-a25e8795c7bb' with name 'Emulation-SW'
+Tue Sep 19 16:47:16 2023: SESSION_MGR: creating session with session uuid: '09aa701e-d59f-4c1c-a687-9451cf1b7082' and name 'Emulation-SW'
+Tue Sep 19 16:47:33 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:47:54 2023: SESSION_MGR: closing session for UUID '09aa701e-d59f-4c1c-a687-9451cf1b7082' with name 'Emulation-SW'
+Tue Sep 19 16:47:54 2023: SESSION_MGR: creating session with session uuid: '3ae4d4ae-6b00-4476-8fb2-39f84fac75ce' and name 'Emulation-SW'
+Tue Sep 19 16:48:11 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:48:24 2023: SESSION_MGR: closing session for UUID '3ae4d4ae-6b00-4476-8fb2-39f84fac75ce' with name 'Emulation-SW'
+Tue Sep 19 16:48:24 2023: SESSION_MGR: creating session with session uuid: 'fb1d0861-ba70-4f36-9038-cd1ac0bf8d61' and name 'Emulation-SW'
+Tue Sep 19 16:48:39 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:48:52 2023: SESSION_MGR: closing session for UUID 'fb1d0861-ba70-4f36-9038-cd1ac0bf8d61' with name 'Emulation-SW'
+Tue Sep 19 16:48:52 2023: SESSION_MGR: creating session with session uuid: '081e85d7-f824-443f-a657-27d340ee4573' and name 'Emulation-SW'
+Tue Sep 19 16:49:09 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:49:30 2023: SESSION_MGR: closing session for UUID '081e85d7-f824-443f-a657-27d340ee4573' with name 'Emulation-SW'
+Tue Sep 19 16:49:31 2023: SESSION_MGR: creating session with session uuid: '2d3143ae-760f-435a-b42e-446e54ae2322' and name 'Emulation-SW'
+Tue Sep 19 16:49:48 2023: SESSION_MGR: closing session for UUID '2d3143ae-760f-435a-b42e-446e54ae2322' with name 'Emulation-SW'
+Tue Sep 19 16:49:49 2023: SESSION_MGR: creating session with session uuid: '5fbeff59-7e44-4420-a656-afd489073053' and name 'Emulation-SW'
+Tue Sep 19 16:50:05 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:50:25 2023: SESSION_MGR: closing session for UUID '5fbeff59-7e44-4420-a656-afd489073053' with name 'Emulation-SW'
+Tue Sep 19 16:56:13 2023: SESSION_MGR: creating session with session uuid: 'e3e4a842-9688-4b59-81a9-f365244f4dde' and name 'Emulation-SW'
+Tue Sep 19 16:56:13 2023: SESSION_MGR: creating session with session uuid: 'e9dcdf0f-8677-4824-8fb6-ea8c416cf0de' and name 'Emulation-SW'
+Tue Sep 19 16:56:14 2023: SESSION_MGR: closing session for UUID 'e3e4a842-9688-4b59-81a9-f365244f4dde' with name 'Emulation-SW'
+Tue Sep 19 16:56:14 2023: SESSION_MGR: creating session with session uuid: '7daa5ee3-0303-497f-8b3b-7ddc77dc6588' and name 'Emulation-SW'
+Tue Sep 19 16:56:14 2023: SESSION_MGR: closing session for UUID 'e9dcdf0f-8677-4824-8fb6-ea8c416cf0de' with name 'Emulation-SW'
+Tue Sep 19 16:56:15 2023: SESSION_MGR: creating session with session uuid: '80ce6068-f31e-4748-acb2-49ce80d70c42' and name 'Emulation-SW'
+Tue Sep 19 16:56:15 2023: SESSION_MGR: closing session for UUID '7daa5ee3-0303-497f-8b3b-7ddc77dc6588' with name 'Emulation-SW'
+Tue Sep 19 16:56:31 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:56:42 2023: SESSION_MGR: creating session with session uuid: 'a412c09a-fc6a-4d83-a8d2-fa86c572cf73' and name 'Emulation-SW'
+Tue Sep 19 16:56:43 2023: SESSION_MGR: closing session for UUID '80ce6068-f31e-4748-acb2-49ce80d70c42' with name 'Emulation-SW'
+Tue Sep 19 16:56:59 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:57:12 2023: SESSION_MGR: creating session with session uuid: 'aa1ed716-324b-434f-8968-0f570ca18f7d' and name 'Emulation-SW'
+Tue Sep 19 16:57:12 2023: SESSION_MGR: closing session for UUID 'a412c09a-fc6a-4d83-a8d2-fa86c572cf73' with name 'Emulation-SW'
+Tue Sep 19 16:57:13 2023: SESSION_MGR: closing session for UUID 'aa1ed716-324b-434f-8968-0f570ca18f7d' with name 'Emulation-SW'
+Tue Sep 19 16:57:14 2023: SESSION_MGR: creating session with session uuid: '473a7b1c-9644-4a48-9872-6f90772f7166' and name 'Emulation-SW'
+Tue Sep 19 16:57:15 2023: SESSION_MGR: closing session for UUID '473a7b1c-9644-4a48-9872-6f90772f7166' with name 'Emulation-SW'
+Tue Sep 19 16:58:26 2023: SESSION_MGR: creating session with session uuid: '472658a7-d050-47c0-8bff-46475b5e0296' and name 'Emulation-SW'
+Tue Sep 19 16:58:26 2023: SESSION_MGR: creating session with session uuid: '4d491f6f-e1fe-4e61-9de2-f36b8abbcd46' and name 'Emulation-SW'
+Tue Sep 19 16:58:26 2023: SESSION_MGR: closing session for UUID '472658a7-d050-47c0-8bff-46475b5e0296' with name 'Emulation-SW'
+Tue Sep 19 16:58:27 2023: SESSION_MGR: creating session with session uuid: 'ca72e409-f066-4180-be2b-e43997630a02' and name 'Emulation-SW'
+Tue Sep 19 16:58:27 2023: SESSION_MGR: closing session for UUID '4d491f6f-e1fe-4e61-9de2-f36b8abbcd46' with name 'Emulation-SW'
+Tue Sep 19 16:58:27 2023: SESSION_MGR: creating session with session uuid: '80bed942-e26e-4870-948e-33a13a68b39f' and name 'Emulation-SW'
+Tue Sep 19 16:58:28 2023: SESSION_MGR: closing session for UUID 'ca72e409-f066-4180-be2b-e43997630a02' with name 'Emulation-SW'
+Tue Sep 19 16:58:44 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:58:57 2023: SESSION_MGR: closing session for UUID '80bed942-e26e-4870-948e-33a13a68b39f' with name 'Emulation-SW'
+Tue Sep 19 16:58:57 2023: SESSION_MGR: creating session with session uuid: '880e6f76-359a-4855-b5c6-58a43fb8db63' and name 'Emulation-SW'
+Tue Sep 19 16:59:13 2023: Rule Check Server: Accepted socket connection from client
+Tue Sep 19 16:59:26 2023: SESSION_MGR: creating session with session uuid: 'a907e636-9b25-4f61-b300-772ffff5416b' and name 'Emulation-SW'
+Tue Sep 19 16:59:26 2023: SESSION_MGR: closing session for UUID '880e6f76-359a-4855-b5c6-58a43fb8db63' with name 'Emulation-SW'
+Tue Sep 19 16:59:26 2023: SESSION_MGR: closing session for UUID 'a907e636-9b25-4f61-b300-772ffff5416b' with name 'Emulation-SW'
+Tue Sep 19 16:59:28 2023: SESSION_MGR: creating session with session uuid: '0c6e564c-27fc-4f42-b708-0272ae59863d' and name 'Emulation-SW'
+Tue Sep 19 16:59:32 2023: SESSION_MGR: closing session for UUID '0c6e564c-27fc-4f42-b708-0272ae59863d' with name 'Emulation-SW'
+Tue Sep 19 16:59:33 2023: SESSION_MGR: creating session with session uuid: '89c8fcfe-cdfb-45ec-a9b1-c08300c948fa' and name 'Emulation-SW'
+Tue Sep 19 16:59:33 2023: SESSION_MGR: closing session for UUID '89c8fcfe-cdfb-45ec-a9b1-c08300c948fa' with name 'Emulation-SW'
+Tue Sep 19 17:04:17 2023: STOP_SERVER received, server token: 258e8c2a-954b-405c-93fa-7400e2cf4ac2, passed token: 258e8c2a-954b-405c-93fa-7400e2cf4ac2
+Tue Sep 19 17:04:17 2023: Socket received request to stop server.
+Tue Sep 19 17:04:17 2023: SERVER: destructor for server bound to port 33724
+Tue Sep 19 17:04:17 2023: XRC main fifo: Good unlink of /tmp/xrcmain258e8c2a-954b-405c-93fa-7400e2cf4ac2
+Tue Sep 19 17:04:17 2023: Server exiting with status 0.
+Tue Sep 19 17:04:17 2023: Closing log file.

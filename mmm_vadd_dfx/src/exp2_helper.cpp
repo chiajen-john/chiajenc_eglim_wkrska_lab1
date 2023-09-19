@@ -43,7 +43,7 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     /* Measure time from start of data loading to end of result downloading, and for just the time of execution
         (Mostly copied from lab 0 starter code)
     */
-    struct timeval start_time_full, end_time_full, start_time_compute, end_time_compute;
+    struct timeval start_time, end_time;
     
     // Get "compute" runtime start time
     gettimeofday(&start_time, NULL);

@@ -45,8 +45,7 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     /* Measure time from start of data loading to end of result downloading, and for just the time of execution
         (Mostly copied from lab 0 starter code)
     */
-    struct timeval start_time_full, end_time_full, start_time_compute, end_time_compute;
-    
+    struct timeval start_time, end_time;
     // Queue migrate data to kernel
     OCL_CHECK(err, err = cl_obj.q.enqueueMigrateMemObjects({*buffer_in},0/* 0 means from host*/));
     OCL_CHECK(err, cl_obj.q.finish());
@@ -65,16 +64,7 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     std::cout << "Execution Finished" << std::endl;
     std::cout << "End captured" << std::endl;
 
-    // Get "full" runtime end time
-    gettimeofday(&end_time_full, NULL);
-    std::cout << "End 1 captured" << std::endl;
-    std::cout << "Result Loaded" << std::endl;
-    std::cout << "Kernel Finished" << std::endl;
-
     // Print runtimes
     double timeusec = (end_time.tv_sec - start_time.tv_sec) * 1e6 +
                     (end_time.tv_usec - start_time.tv_usec);
-
-    std::cout << "End-to-end runtime: " << timeusec_full << std::endl;
-    std::cout << "Arithmetic runtime: " << timeusec_compute << std::endl;
 }

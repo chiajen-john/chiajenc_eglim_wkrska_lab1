@@ -49,15 +49,16 @@
 int main(int argc, char* argv[]) {
 
 	// Hard coding xclbin filenames, ignoring command line arguments
-    std::string xclbinFilename[7] = {
-    		"binary_container_vadd.xclbin",
-    		"binary_container_mmm.xclbin",
-            "binary_container_exp1a.xclbin",
-            "binary_container_exp1b.xclbin",
-            "binary_container_exp2a.xclbin",
-            "binary_container_exp2b.xclbin",
-            "binary_container_exp3.xclbin"
-    };
+
+	std::string xclbinFilename[4] = {
+	    		"binary_container_vadd.xclbin",
+				"binary_container_mmm.xclbin",
+	            "binary_container_exp1a.xclbin",
+	            "binary_container_exp1b.xclbin",
+				// "binary_container_exp2a.xclbin",
+				// "binary_container_exp2b.xclbin",
+				// "binary_container_exp3.xclbin"
+	};
 
     cl_object cl_obj;
 
@@ -110,36 +111,39 @@ int main(int argc, char* argv[]) {
     {
         read_xclbin(xclbinFilename[2], cl_obj.bins);
 
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "exp1a";
+        krnl_object exp1a_obj;
+        exp1a_obj.index = 2;
+        exp1a_obj.name = "exp1a";
 
         float *ptr_in;
 
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
+        program_kernel(cl_obj, exp1a_obj);
+        exp1_allocate_mem(cl_obj, exp1a_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
         initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj);
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
+        exp1_run_kernel(cl_obj, exp1a_obj);
+        exp1_deallocate_mem(cl_obj, exp1a_obj, ptr_in);
+        std::cout << "exp1a completed\n\n";
     }
 
     // Exp 1b
     {
         read_xclbin(xclbinFilename[3], cl_obj.bins);
 
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "exp1b";
+        krnl_object exp1b;
+        exp1b.index = 3;
+        exp1b.name = "exp1b";
 
         float *ptr_in;
 
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
+        program_kernel(cl_obj, exp1b);
+        exp1_allocate_mem(cl_obj, exp1b, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
         initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj);
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_in);
+        exp1_run_kernel(cl_obj, exp1b);
+        exp1_deallocate_mem(cl_obj, exp1b, ptr_in);
+        std::cout << "exp1b completed\n\n";
     }
 
+    /*
     // Exp 2a
     {
         read_xclbin(xclbinFilename[4], cl_obj.bins);
@@ -189,6 +193,7 @@ int main(int argc, char* argv[]) {
         mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
         mmm_deallocate_mem(cl_obj, xyz_obj, ptr_a, ptr_b, ptr_result);
     }
+    */
 
     
 #if 0

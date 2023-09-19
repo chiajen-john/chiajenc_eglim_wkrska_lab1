@@ -1,0 +1,6 @@
+16:58:26 **** Incremental Build of configuration Emulation-SW for project exp1a_kernels ****
+make -j40 all 
+make: Nothing to be done for `all'.
+
+16:58:26 Build Finished (took 105ms)
+

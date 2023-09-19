@@ -1,0 +1,272 @@
+/*
+
+Xilinx Vitis v2021.1.0 (64-bit) [Major: 2021, Minor: 1]
+SW Build 3245906 on 2021-06-09-18:10:55
+
+Process ID (PID): 14646
+License: Customer
+
+Current time: 	Tue Sep 19 15:26:09 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Red Hat Enterprise Linux Server release 7.9 (Maipo)
+OS Version: 3.10.0-1160.90.1.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 40
+
+Display: localhost:10.0
+Screen size: 1440x900
+Available screens: 1
+Available disk space: 73 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2
+Java executable location: 	/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/javafx-sdk-11.0.2/lib:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o/Default:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/lib/:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/lib//server:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o/Default:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/python-3.8.3/lib:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/aietools/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis
+
+User name: 	chiajenc
+User home directory: /afs/andrew.cmu.edu/usr5/chiajenc
+User working directory: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis
+HDI_APPROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+RDI_DATADIR: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data
+RDI_BINDIR: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin
+
+Vitis preferences directory: /afs/andrew.cmu.edu/usr5/chiajenc/.Xilinx/Vitis/2021.1/
+Vitis workspace directory: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1
+Vitis workspace log file location: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+OECORE_SDK_VERSION: 2021.1
+SDKTARGETSYSROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/petalinux/2021.1/sysroots/cortexa72-cortexa53-xilinx-linux
+VITIS_ENV_SET: 1
+XILINX_DSP: 
+XILINX_HLS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_SDK: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_VITIS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_VIVADO: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1
+XILINX_VIVADO_HLS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("krnl_vadd.cpp", "mmm_vadd_dfx_system > vadd_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "mmm_vadd_dfx_system > vadd_kernels", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("krnl_vadd.cpp", "mmm_vadd_dfx_system > vadd_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("*krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "Editor", "CTabItem.*KRNL_EXP1A_CPP");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+selectTextEditor("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_VADD_CPP");
+selectMenuItem("©", "krnl_vadd.cpp", "WorkbenchWindow", "MenuItem.©");
+closeView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+activateView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");
+selectTextEditor("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_EXP1A_CPP");
+selectMenuItem("©", "krnl_exp1a.cpp", "WorkbenchWindow", "MenuItem.©");
+closeView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+selectTreeTable("src", "mmm_vadd_dfx_system > mmm_vadd_dfx", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("src", "mmm_vadd_dfx_system > exp1b_kernels", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("krnl_exp1b.cpp", "mmm_vadd_dfx_system > exp1b_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1b_kernels", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("krnl_exp1a.cpp", "mmm_vadd_dfx_system > exp1a_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");
+selectTextEditor("krnl_exp1b.cpp", "exp1b_kernels/src/krnl_exp1b.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_EXP1B_CPP");
+selectMenuItem("©", "krnl_exp1b.cpp", "WorkbenchWindow", "MenuItem.©");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1b_kernels", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("krnl_exp1b.cpp", "exp1b_kernels/src/krnl_exp1b.cpp", "CEditor", "CTabItem.KRNL_EXP1B_CPP");
+selectTreeTable("src", "mmm_vadd_dfx_system > mmm_vadd_dfx", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp3_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp3_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_vadd_dfx", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("main.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp2_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+closeView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+closeView("exp2_helper.cpp", "mmm_vadd_dfx/src/exp2_helper.cpp", "CEditor", "CTabItem.EXP2_HELPER_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("main.cpp", "mmm_vadd_dfx/src/main.cpp", "CEditor", "CTabItem.MAIN_CPP");
+activateView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+activateView("*main.cpp", "mmm_vadd_dfx/src/main.cpp", "Editor", "CTabItem.*MAIN_CPP");
+activateView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+activateView("main.cpp", "mmm_vadd_dfx/src/main.cpp", "CEditor", "CTabItem.MAIN_CPP");
+closeView("main.cpp", "mmm_vadd_dfx/src/main.cpp", "CEditor", "CTabItem.MAIN_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+selectTreeTable("mmm_vadd_dfx", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx_system.sprj", "mmm_vadd_dfx_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectIconButton("Change target platform for the current project", "mmm_vadd_dfx_system", "SystemSettingsEditor", "Button.CHANGE_TARGET_PLATFORM");
+selectTreeTable("xilinx_zcu102_base_202110_1", "Change Platform", "ChangePlatformDialog", "TreeViewer.ArrayTreeContentProvider");
+selectTreeTable("xilinx_zcu102_base_dfx_202110_1", "Change Platform", "ChangePlatformDialog", "TreeViewer.ArrayTreeContentProvider");
+selectTreeTable("xilinx_zcu102_base_202110_1", "Change Platform", "ChangePlatformDialog", "TreeViewer.ArrayTreeContentProvider");
+selectButton("OK", "Change Platform", "ChangePlatformDialog", "Button.OK");
+selectButton("No", "Change Platform", "MessageDialog", "Button.NO");
+selectIconButton("Change target platform for the current project", "mmm_vadd_dfx_system", "SystemSettingsEditor", "Button.CHANGE_TARGET_PLATFORM");
+selectTreeTable("xilinx_zcu102_base_202110_1", "Change Platform", "ChangePlatformDialog", "TreeViewer.ArrayTreeContentProvider");
+selectButton("OK", "Change Platform", "ChangePlatformDialog", "Button.OK");
+selectButton("Yes", "Change Platform", "MessageDialog", "Button.YES");
+selectCombo("Emulation-SW", "mmm_vadd_dfx_system", "SystemSettingsEditor", "ComboViewer.ArrayContentProvider");
+cancelDirectoryDialog("Linux Sysroot Path", "SDXDirectoryDialog", "Button.CANCEL");
+setTextField("/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/", "mmm_vadd_dfx_system", "SystemSettingsEditor", "Text.SYSROOT");
+setTextField("/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/", "mmm_vadd_dfx_system", "SystemSettingsEditor", "Text.ROOT_FS");
+setTextField("/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/", "mmm_vadd_dfx_system", "SystemSettingsEditor", "Text.KERNEL_IMAGE");
+selectToolBarMenuButton("Build Emulation-SW for project mmm_vadd_dfx_system", "mmm_vadd_dfx_system", "WorkbenchWindow", "ToolItem.BUILD_EMULATION_SW");
+selectCheckBoxMenuItem("2 Emulation-SW", Boolean.FALSE, "mmm_vadd_dfx_system", "WorkbenchWindow", "MenuItem.2_EMULATION_SW");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Problems", "66 errors 14 warnings 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("end_time was not declared in this scope", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("mmm_helper.cpp", "mmm_vadd_dfx/src/mmm_helper.cpp", "CEditor", "CTabItem.MMM_HELPER_CPP");
+activateView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+closeView("mmm_helper.cpp", "mmm_vadd_dfx/src/mmm_helper.cpp", "CEditor", "CTabItem.MMM_HELPER_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp2_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp3_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+closeView("exp3_helper.cpp", "mmm_vadd_dfx/src/exp3_helper.cpp", "CEditor", "CTabItem.EXP3_HELPER_CPP");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+closeView("exp2_helper.cpp", "mmm_vadd_dfx/src/exp2_helper.cpp", "CEditor", "CTabItem.EXP2_HELPER_CPP");
+selectTreeTable("pl", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", "mmm_vadd_dfx_system", "SystemSettingsEditor", "SystemSettingsEditor");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectToolBarButton("Add project", "mmm_vadd_dfx_system", "CTabItem", "ToolItem.ADD_PROJECT");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_vadd_dfx_system_hw_link.prj", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_kernels.prj", "mmm_vadd_dfx_system > mmm_kernels", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_kernels", "mmm_vadd_dfx_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx_system.sprj", "mmm_vadd_dfx_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Delete project", "mmm_vadd_dfx_system", "CTabItem", "ToolItem.DELETE_PROJECT");
+selectButton("Cancel", "Delete Resources", "RefactoringWizardDialog2", "Button.CANCEL");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_vadd_dfx_system_hw_link.prj", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("Emulation-SW", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx_system_hw_link.prj", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("binary_container_exp2a", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "mmm_vadd_dfx_system_hw_link", "SDXSettingsEditor", "TreeViewer.HwLinkAcceleratorTableContentProvider");
+selectToolBarButton("Remove", "mmm_vadd_dfx_system_hw_link", "CTabItem", "ToolItem.REMOVE");
+selectTreeTable("binary_container_exp2b", "mmm_vadd_dfx_system_hw_link", "SDXSettingsEditor", "TreeViewer.HwLinkAcceleratorTableContentProvider");
+selectToolBarButton("Remove", "mmm_vadd_dfx_system_hw_link", "CTabItem", "ToolItem.REMOVE");
+selectTreeTable("binary_container_exp3", "mmm_vadd_dfx_system_hw_link", "SDXSettingsEditor", "TreeViewer.HwLinkAcceleratorTableContentProvider");
+selectToolBarButton("Remove", "mmm_vadd_dfx_system_hw_link", "CTabItem", "ToolItem.REMOVE");
+selectToolBarButton("Add Hardware Function", "mmm_vadd_dfx_system_hw_link", "CTabItem", "ToolItem.ADD_HARDWARE_FUNCTION");
+selectButton("OK", "Add Hardware Functions", "HwLinkKernelSelectionDialog", "Button.OK");
+selectTreeTable("krnl_exp1b", "binary_container_exp1b", EventType.POPUP_TRIGGER_CLICK, "mmm_vadd_dfx_system_hw_link", "SDXSettingsEditor", "TreeViewer.HwLinkAcceleratorTableContentProvider");
+selectMenuItem("Remove", "mmm_vadd_dfx_system_hw_link", "SDXSettingsEditor", "MenuItem.REMOVE");
+selectToolBarMenuButton("Build Emulation-SW for project mmm_vadd_dfx_system_", "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "ToolItem.BUILD_EMULATION_SW");
+selectCheckBoxMenuItem("2 Emulation-SW", Boolean.FALSE, "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "MenuItem.2_EMULATION_SW");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "52 errors 7 warnings 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("end_time was not declared in this scope", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("Problems", "66 errors 7 warnings 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("end_time was not declared in this scope", "Errors", "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+selectProblemsView("end_time was not declared in this scope", "Errors", EventType.DOUBLE_CLICK, "ProblemsView", "TreeViewer.MarkerViewerContentProvider");
+selectToolBarMenuButton("Build Emulation-SW for project mmm_vadd_dfx", "mmm_vadd_dfx", "WorkbenchWindow", "ToolItem.BUILD_EMULATION_SW");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Build Emulation-SW for project mmm_vadd_dfx_system", "Assistant", "SDXAssistantView", "ToolItem.BUILD_EMULATION_SW");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+activateView("Problems", "52 errors 7 warnings 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+closeView("Problems", "52 errors, 7 warnings, 1 other", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarButton("Open Console", "Console", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+selectToolBarMenuButton("Open Console", "Console", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+selectToolBarButton("Operation Build Project finished with errors press", "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "ToolItem.OPERATION_BUILD");
+activateView("Progress", "ProgressView", "CTabItem.PROGRESS");
+activateView("Guidance", "SDXDrcView", "CTabItem.GUIDANCE");
+activateView("Vitis Log", "SdkLogView", "CTabItem.VITIS_LOG");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectToolBarMenuButton("Display Selected Console", "Console", "ConsoleView", "ToolItem.DISPLAY_SELECTED");
+activateView("Progress", "ProgressView", "CTabItem.PROGRESS");
+selectToolBarButton("Open Console", "Console", "ConsoleView", "ToolItem.OPEN_CONSOLE");
+activateView("Vitis Log", "SDKLogView", "CTabItem.VITIS_LOG");
+activateView("Guidance", "SDXDrcView", "CTabItem.GUIDANCE");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectMenuItem("Window", "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "MenuItem.WINDOW");
+selectMenuItem("Debug Perspective", "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "MenuItem.DEBUG_PERSPECTIVE");
+activateView("Debug", "LaunchView", "CTabItem.DEBUG");
+closeView("Debug", "LaunchView", "CTabItem.DEBUG");
+activateView("Assistant", "Assistant to manage Vitis project setup builds and", "SDXAssistantView", "CTabItem.ASSISTANT");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+activateView("Problems", "52 errors 7 warnings 1 other", "ProblemView", "CTabItem.PROBLEMS");
+selectTree("make ***", "Errors", EventType.DOUBLE_CLICK, "Problems", "ProblemsView", "Tree.Markers");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp3_kernels", "mmm_vadd_dfx_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx_system", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp3_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp3_helper.cpp", "mmm_vadd_dfx/src/exp3_helper.cpp", "CEditor", "CTabItem.EXP3_HELPER_CPP");
+selectToolBarMenuButton("Run", "mmm_vadd_dfx_system_hw_link", "WorkbenchWindow", "ToolItem.RUN");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectToolBarButton("Run Emulation-SW for project mmm_vadd_dfx_system", "Assistant", "SDXAssistantView", "ToolItem.RUN_EMULATION_SW");
+selectMenuItem("Launch SW Emulator", "Assistant", "WorkbenchWindow", "MenuItem.LAUNCH_SW_EMULATOR");
+activateView("Vitis Log", "SDKLogView", "CTabItem.VITIS_LOG");
+selectButton("Start Emulator and Run", "Launch On Emulator", "Button", "START_EMULATOR_AND");
+selectButton("OK", "Error", "ErrorDialog", "Button.OK");
+selectButton("Details", "Error Launching Program", "ErrorDialog", "Button.DETAILS");
+selectButton("OK", "Error Launching Program", "ErrorDialog", "Button.OK");
+selectButton("Exit", "Confirm Exit", "MessageDialogWithToggle", "Button.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 9/19/23, 5:04:17 PM EDT
+// Elapsed time: 01:38:09
+

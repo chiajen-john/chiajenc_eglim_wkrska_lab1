@@ -1,0 +1,40 @@
+16:58:27 **** Incremental Build of configuration Emulation-SW for project exp2b_kernels ****
+make -j40 all 
+/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin/v++ --target sw_emu --compile -I"../src" --config krnl_exp2b-compile.cfg -o"build/krnl_exp2b.xo" "../src/krnl_exp2b.cpp"
+Option Map File Used: '/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data/vitis/vpp/optMap.xml'
+
+****** v++ v2021.1 (64-bit)
+  **** SW Build 3246112 on 2021-06-09-14:19:56
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/reports/krnl_exp2b
+	Log files: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/logs/krnl_exp2b
+Running Dispatch Server on port: 38144
+INFO: [v++ 60-1548] Creating build summary session with primary output /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b.xo.compile_summary, at Tue Sep 19 16:58:44 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Tue Sep 19 16:58:44 2023
+INFO: [v++ 60-895]   Target platform: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/xilinx_zcu102_base_202110_1/xilinx_zcu102_base_202110_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/xilinx_zcu102_base_202110_1/hw/xilinx_zcu102_base_202110_1.xsa'
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_zcu102_base_202110_1
+INFO: [v++ 60-242] Creating kernel: 'krnl_exp2b'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: krnl_exp2b Log file: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log :
+ERROR: [v++ 207-3796] unknown type name 'size_t': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:23:10
+ERROR: [v++ 207-3771] use of undeclared identifier 'c_num': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:32:32
+ERROR: [v++ 207-1219] expected ';' at end of declaration: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:33:16
+ERROR: [v++ 207-3771] use of undeclared identifier 'j': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:39:13
+ERROR: [v++ 207-1237] extraneous closing brace ('}'): /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:44:1
+ERROR: [v++ 60-300] Failed to build kernel(ip) krnl_exp2b, see log for details: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log
+ERROR: [v++ 60-773] In '/afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3796] unknown type name 'size_t': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:23:10
+ERROR: [v++ 60-773] In '/afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'c_num': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:32:32
+ERROR: [v++ 60-773] In '/afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1219] expected ';' at end of declaration: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:33:16
+ERROR: [v++ 60-773] In '/afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'j': /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:39:13
+ERROR: [v++ 60-773] In '/afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/Emulation-SW/build/krnl_exp2b/krnl_exp2b/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1237] extraneous closing brace ('}'): /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/exp2b_kernels/src/krnl_exp2b.cpp:44:1
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.
+make: *** [build/krnl_exp2b.xo] Error 1
+
+16:58:57 Build Finished (took 29s.319ms)
+

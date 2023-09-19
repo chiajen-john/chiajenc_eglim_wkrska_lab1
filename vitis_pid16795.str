@@ -1,0 +1,108 @@
+/*
+
+Xilinx Vitis v2021.1.0 (64-bit) [Major: 2021, Minor: 1]
+SW Build 3245906 on 2021-06-09-18:10:55
+
+Process ID (PID): 16795
+License: Customer
+
+Current time: 	Tue Sep 19 15:01:07 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Red Hat Enterprise Linux Server release 7.9 (Maipo)
+OS Version: 3.10.0-1160.90.1.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: localhost:10.0
+Screen size: 1440x900
+Available screens: 1
+Available disk space: 73 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2
+Java executable location: 	/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/javafx-sdk-11.0.2/lib:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o/Default:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/lib/:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/jre11.0.2/lib//server:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o/Default:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/tps/lnx64/python-3.8.3/lib:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/aietools/lib/lnx64.o:/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis
+
+User name: 	chiajenc
+User home directory: /afs/andrew.cmu.edu/usr5/chiajenc
+User working directory: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis
+HDI_APPROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+RDI_DATADIR: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data
+RDI_BINDIR: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/bin
+
+Vitis preferences directory: /afs/andrew.cmu.edu/usr5/chiajenc/.Xilinx/Vitis/2021.1/
+Vitis workspace directory: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1
+Vitis workspace log file location: /afs/andrew.cmu.edu/usr5/chiajenc/lab1/chiajenc_eglim_wkrska_lab1/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+OECORE_SDK_VERSION: 2021.1
+SDKTARGETSYSROOT: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/petalinux/2021.1/sysroots/cortexa72-cortexa53-xilinx-linux
+VITIS_ENV_SET: 1
+XILINX_DSP: 
+XILINX_HLS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_SDK: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_VITIS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1
+XILINX_VIVADO: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1
+XILINX_VIVADO_HLS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("krnl_exp1a.cpp", "mmm_vadd_dfx_system > exp1a_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("mmm_vadd_dfx_system_hw_link.prj", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("mmm_vadd_dfx_system", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+closeView("mmm_vadd_dfx_system_hw_link", "mmm_vadd_dfx_system_hw_link/mmm_vadd_dfx_system_hw_link.prj", "SDXSettingsEditor", "CTabItem.MMM_VADD_DFX_SYSTEM_HW_LINK");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("mmm_vadd_dfx_system", "mmm_vadd_dfx_system > mmm_vadd_dfx_system_hw_link", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("mmm_vadd_dfx_system.sprj", "mmm_vadd_dfx_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("mmm_vadd_dfx_system", "mmm_vadd_dfx_system/mmm_vadd_dfx_system.sprj", "SystemSettingsEditor", "CTabItem.MMM_VADD_DFX_SYSTEM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("vadd_kernels", "mmm_vadd_dfx_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("main.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.cpp", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("exp1_helper.h", "mmm_vadd_dfx_system > mmm_vadd_dfx > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("exp1_helper.h", "mmm_vadd_dfx/src/exp1_helper.h", "CEditor", "CTabItem.EXP1_HELPER_H");
+activateView("main.cpp", "mmm_vadd_dfx/src/main.cpp", "CEditor", "CTabItem.MAIN_CPP");
+activateView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+closeView("main.cpp", "mmm_vadd_dfx/src/main.cpp", "CEditor", "CTabItem.MAIN_CPP");
+closeView("exp1_helper.cpp", "mmm_vadd_dfx/src/exp1_helper.cpp", "CEditor", "CTabItem.EXP1_HELPER_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("krnl_vadd.cpp", "mmm_vadd_dfx_system > vadd_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");
+activateView("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", "CEditor", "CTabItem.KRNL_VADD_CPP");
+selectTextEditor("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_VADD_CPP");
+selectMenuItem("©", "krnl_vadd.cpp", "WorkbenchWindow", "MenuItem.©");
+selectTextEditor("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_VADD_CPP");
+selectMenuItem("Paste", "krnl_vadd.cpp", "WorkbenchWindow", "MenuItem.PASTE");
+selectTextEditor("krnl_vadd.cpp", "vadd_kernels/src/krnl_vadd.cpp", EventType.POPUP_TRIGGER_CLICK, "CEditor", "StyledText.KRNL_VADD_CPP");
+selectMenuItem("Paste", "krnl_vadd.cpp", "WorkbenchWindow", "MenuItem.PASTE");
+selectToolBarButton("Last Edit Location", "vadd_kernels", "WorkbenchWindow", "ToolItem.LAST_EDIT_LOCATION");
+activateView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");
+selectButton("Dont Save", "Save Resource", "Button", "DONT_SAVE");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("krnl_vadd.cpp", "mmm_vadd_dfx_system > vadd_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("krnl_exp1a.cpp", "exp1a_kernels/src/krnl_exp1a.cpp", "CEditor", "CTabItem.KRNL_EXP1A_CPP");

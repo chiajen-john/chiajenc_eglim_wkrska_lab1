@@ -51,7 +51,7 @@ ALL TIMES.
 //
 
 #define BUFFER_SIZE 256
-#define DATA_SIZE 4096 
+#define DATA_SIZE 4096
 //TRIPCOUNT identifier
 const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
 const unsigned int c_size = BUFFER_SIZE;

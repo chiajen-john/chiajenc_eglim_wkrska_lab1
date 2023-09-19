@@ -2,7 +2,7 @@
 #include <sys/time.h>
 
 // Allocate memory on device and map pointers into the host
-void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in, int size_in_bytes) {
+void exp1_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in, int size_in_bytes) {
     cl_int err;
 
     // These commands will allocate memory on the Device. The cl::Buffer objects can
@@ -16,7 +16,7 @@ void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in,
 }
 
 // Unmap device memory when done
-void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in) {
+void exp1_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in) {
     cl_int err;
 
     cl::Buffer *buffer_in = &krnl_obj.buffers[0];
@@ -26,7 +26,7 @@ void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in
 }
 
 // Set kernel arguments and execute it
-void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
+void exp1_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     cl_int err;
 
     // Copied directly from vadd example
@@ -43,7 +43,7 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     /* Measure time from start of data loading to end of result downloading, and for just the time of execution
         (Mostly copied from lab 0 starter code)
     */
-    struct timeval start_time_full, end_time_full, start_time_compute, end_time_compute;
+    struct timeval start_time, end_time;
 
     // Queue migrate data to kernel
     OCL_CHECK(err, err = cl_obj.q.enqueueMigrateMemObjects({*buffer_in},0/* 0 means from host*/));

@@ -1,10 +1,37 @@
-15:31:29 **** Build of configuration Hardware for project mmm_vadd_dfx ****
-make -j56 all 
-aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=cmu_u96v2_dfx_full -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/main.o" "../src/main.cpp"
-aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=cmu_u96v2_dfx_full -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/mmm_helper.o" "../src/mmm_helper.cpp"
-aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=cmu_u96v2_dfx_full -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/utils.o" "../src/utils.cpp"
-aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=cmu_u96v2_dfx_full -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/vadd_helper.o" "../src/vadd_helper.cpp"
-aarch64-linux-gnu-g++ -o "mmm_vadd_dfx" src/main.o src/mmm_helper.o src/utils.o src/vadd_helper.o -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -Wl,-z,relro,-z,now -lxilinxopencl -lpthread -lrt -ldl -lcrypt -lstdc++ -L/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/lib/ --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux
+16:59:28 **** Incremental Build of configuration Emulation-SW for project mmm_vadd_dfx ****
+make -j40 all 
+aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=xilinx_zcu102_base_202110_1 -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/exp1_helper.o" "../src/exp1_helper.cpp"
+aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=xilinx_zcu102_base_202110_1 -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/exp2_helper.o" "../src/exp2_helper.cpp"
+aarch64-linux-gnu-g++  -O2 -pipe -g -feliminate-unused-debug-types  -std=c++1y -DVITIS_PLATFORM=xilinx_zcu102_base_202110_1 -D__USE_XOPEN2K8 -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vivado/2021.1/include/ -I/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux/usr/include/xrt/ -O0 -g -Wall -c -fmessage-length=0 --sysroot=/afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux -o "src/exp3_helper.o" "../src/exp3_helper.cpp"
+In file included from ../src/exp3_helper.h:3,
+                 from ../src/exp3_helper.cpp:3:
+../src/exp3_helper.cpp: In function 'void exp_allocate_mem(cl_object&, krnl_object&, float**, int)':
+../src/exp3_helper.cpp:17:68: error: 'buffer_a' was not declared in this scope; did you mean 'buffer_in'?
+   17 |     OCL_CHECK(err, (*ptr_in) = (float*)cl_obj.q.enqueueMapBuffer (*buffer_a , CL_TRUE , CL_MAP_WRITE , 0, size_in_bytes, NULL, NULL, &err));
+      |                                                                    ^~~~~~~~
+../src/utils.h:54:5: note: in definition of macro 'OCL_CHECK'
+   54 |     call;                                                                                        \
+      |     ^~~~
+../src/exp3_helper.cpp:14:17: warning: unused variable 'buffer_in' [-Wunused-variable]
+   14 |     cl::Buffer *buffer_in = &krnl_obj.buffers[0];
+      |                 ^~~~~~~~~
+../src/exp3_helper.cpp: In function 'void exp_run_kernel(cl_object&, krnl_object&)':
+../src/exp3_helper.cpp:68:19: error: 'end_time_full' was not declared in this scope; did you mean 'end_time'?
+   68 |     gettimeofday(&end_time_full, NULL);
+      |                   ^~~~~~~~~~~~~
+      |                   end_time
+../src/exp3_helper.cpp:77:44: error: 'timeusec_full' was not declared in this scope; did you mean 'timeusec'?
+   77 |     std::cout << "End-to-end runtime: " << timeusec_full << std::endl;
+      |                                            ^~~~~~~~~~~~~
+      |                                            timeusec
+../src/exp3_helper.cpp:78:44: error: 'timeusec_compute' was not declared in this scope
+   78 |     std::cout << "Arithmetic runtime: " << timeusec_compute << std::endl;
+      |                                            ^~~~~~~~~~~~~~~~
+../src/exp3_helper.cpp:74:12: warning: unused variable 'timeusec' [-Wunused-variable]
+   74 |     double timeusec = (end_time.tv_sec - start_time.tv_sec) * 1e6 +
+      |            ^~~~~~~~
+make: *** [src/exp3_helper.o] Error 1
+make: *** Waiting for unfinished jobs....
 
-15:31:37 Build Finished (took 8s.756ms)
+16:59:32 Build Finished (took 3s.924ms)
 
