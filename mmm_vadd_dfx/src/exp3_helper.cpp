@@ -4,7 +4,7 @@
 #include <sys/time.h>
 
 // Allocate memory on device and map pointers into the host
-void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in, int size_in_bytes) {
+void exp3_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, int **ptr_in, int size_in_bytes) {
     cl_int err;
 
     // These commands will allocate memory on the Device. The cl::Buffer objects can
@@ -14,11 +14,11 @@ void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in,
     cl::Buffer *buffer_in = &krnl_obj.buffers[0];
     
     //We then need to map our OpenCL buffers to get the pointers
-    OCL_CHECK(err, (*ptr_in) = (float*)cl_obj.q.enqueueMapBuffer (*buffer_a , CL_TRUE , CL_MAP_WRITE , 0, size_in_bytes, NULL, NULL, &err));
+    OCL_CHECK(err, (*ptr_in) = (int*)cl_obj.q.enqueueMapBuffer (*buffer_in , CL_TRUE , CL_MAP_WRITE , 0, size_in_bytes, NULL, NULL, &err));
 }
 
 // Unmap device memory when done
-void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in) {
+void exp3_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, int *ptr_in) {
     cl_int err;
 
     cl::Buffer *buffer_in = &krnl_obj.buffers[0];
@@ -28,7 +28,7 @@ void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in
 }
 
 // Set kernel arguments and execute it
-void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
+void exp3_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     cl_int err;
 
     // Copied directly from vadd example
@@ -46,6 +46,7 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
         (Mostly copied from lab 0 starter code)
     */
     struct timeval start_time, end_time;
+
     // Queue migrate data to kernel
     OCL_CHECK(err, err = cl_obj.q.enqueueMigrateMemObjects({*buffer_in},0/* 0 means from host*/));
     OCL_CHECK(err, cl_obj.q.finish());
@@ -63,8 +64,12 @@ void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     gettimeofday(&end_time, NULL);
     std::cout << "Execution Finished" << std::endl;
     std::cout << "End captured" << std::endl;
+    std::cout << "Result Loaded" << std::endl;
+    std::cout << "Kernel Finished" << std::endl;
 
     // Print runtimes
     double timeusec = (end_time.tv_sec - start_time.tv_sec) * 1e6 +
                     (end_time.tv_usec - start_time.tv_usec);
+
+    std::cout << "Arithmetic runtime: " << timeusec << std::endl;
 }

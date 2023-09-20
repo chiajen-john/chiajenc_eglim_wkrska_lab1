@@ -49,21 +49,21 @@
 int main(int argc, char* argv[]) {
 
 	// Hard coding xclbin filenames, ignoring command line arguments
-
-	std::string xclbinFilename[4] = {
+std::string xclbinFilename[7] = {
 	    		"binary_container_vadd.xclbin",
 				"binary_container_mmm.xclbin",
 	            "binary_container_exp1a.xclbin",
 	            "binary_container_exp1b.xclbin",
-				// "binary_container_exp2a.xclbin",
-				// "binary_container_exp2b.xclbin",
-				// "binary_container_exp3.xclbin"
+				"binary_container_exp2a.xclbin",
+				"binary_container_exp2b.xclbin",
+				"binary_container_exp3.xclbin"
 	};
 
     cl_object cl_obj;
 
     initialize_device(cl_obj);
 
+#if 0
     {
         // Read vadd
         read_xclbin(xclbinFilename[0], cl_obj.bins);
@@ -83,7 +83,9 @@ int main(int argc, char* argv[]) {
         std::cout << "VADD TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
         vadd_deallocate_mem(cl_obj, vadd_obj, ptr_a, ptr_b, ptr_result);
     }
+#endif
 
+#if 0
     {
         // Read mmm
         read_xclbin(xclbinFilename[1], cl_obj.bins);
@@ -106,7 +108,9 @@ int main(int argc, char* argv[]) {
         std::cout << "MMM TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
         mmm_deallocate_mem(cl_obj, mmm_obj, ptr_a, ptr_b, ptr_result);
     }
+#endif
 
+#if 0
     // Exp 1a
     {
         read_xclbin(xclbinFilename[2], cl_obj.bins);
@@ -142,79 +146,60 @@ int main(int argc, char* argv[]) {
         exp1_deallocate_mem(cl_obj, exp1b, ptr_in);
         std::cout << "exp1b completed\n\n";
     }
+#endif
 
-    /*
+    #if 0
     // Exp 2a
     {
         read_xclbin(xclbinFilename[4], cl_obj.bins);
 
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "exp2a";
+        krnl_object exp2a_obj;
+        exp2a_obj.index = 4;
+        exp2a_obj.name = "exp2a";
 
         float *ptr_result;
 
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj);
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
+        program_kernel(cl_obj, exp2a_obj);
+        exp2_allocate_mem(cl_obj, exp2a_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
+        exp2_run_kernel(cl_obj, exp2a_obj);
+        exp2_deallocate_mem(cl_obj, exp2a_obj, ptr_result);
     }
+#endif
 
+#if 0
     // Exp 2b
     {
         read_xclbin(xclbinFilename[5], cl_obj.bins);
 
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "exp2b";
+        krnl_object exp2b_obj;
+        exp2b_obj.index = 5;
+        exp2b_obj.name = "exp2b";
 
         float *ptr_result;
 
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
-        mmm_run_kernel(cl_obj, xyz_obj);
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_result);
+        program_kernel(cl_obj, exp2b_obj);
+        exp2_allocate_mem(cl_obj, exp2b_obj, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
+        exp2_run_kernel(cl_obj, exp2b_obj);
+        exp2_deallocate_mem(cl_obj, exp2b_obj, ptr_result);
     }
+#endif
 
+#if 1
     // Exp 3
     {
         read_xclbin(xclbinFilename[6], cl_obj.bins);
 
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "exp3";
+        krnl_object exp3_obj;
+        exp3_obj.index = 6;
+        exp3_obj.name = "exp3";
 
-        float *ptr_a, *ptr_b, *ptr_result;
+        int *ptr_in;
 
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, EXP_DIM * EXP_DIM * sizeof(float));
-        initialize_memory_fp(ptr_a, EXP_DIM * EXP_DIM);
-        initialize_memory_fp(ptr_b, EXP_DIM * EXP_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj, EXP_DIM);
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_a, ptr_b, ptr_result);
-    }
-    */
-
-    
-#if 0
-    // Reuse this template to continue to develop Part 4
-    {
-        read_xclbin(xclbinFilename[7], cl_obj.bins);
-
-        krnl_object xyz_obj;
-        xyz_obj.index = ?;
-        xyz_obj.name = "????";
-
-        float *ptr_a, *ptr_b, *ptr_result;
-
-        program_kernel(cl_obj, xyz_obj);
-        mmm_allocate_mem(cl_obj, xyz_obj, &ptr_a, &ptr_b, &ptr_result, MMM_DIM * MMM_DIM * sizeof(float));
-        initialize_memory_fp(ptr_a, MMM_DIM * MMM_DIM);
-        initialize_memory_fp(ptr_b, MMM_DIM * MMM_DIM);
-        mmm_run_kernel(cl_obj, xyz_obj, MMM_DIM);
-        //int match = mmm_check(ptr_a, ptr_b, ptr_result, MMM_DIM);
-        //std::cout << "MMM TEST " << (match ? "FAILED" : "PASSED") << "\n" << std::endl;
-        mmm_deallocate_mem(cl_obj, xyz_obj, ptr_a, ptr_b, ptr_result);
+        program_kernel(cl_obj, exp3_obj);
+        exp3_allocate_mem(cl_obj, exp3_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(int));
+        initialize_memory_int(ptr_in, EXP_DIM * EXP_DIM);
+        exp3_run_kernel(cl_obj, exp3_obj);
+        exp3_deallocate_mem(cl_obj, exp3_obj, ptr_in);
     }
 #endif
 }
