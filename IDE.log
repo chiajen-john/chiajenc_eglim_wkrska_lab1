@@ -65,3 +65,11 @@ Make sure that the application 'mmm_vadd_dfx' is built properly for configuratio
 3. binary_container_exp1a.xclbin
 4. binary_container_exp1b.xclbin
 
+21:14:50 INFO  : Launching XSCT server: xsct -n  -interactive /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1/temp_xsdb_launch_script.tcl
+21:14:51 INFO  : Registering command handlers for Vitis TCF services
+21:14:52 INFO  : Platform repository initialization has completed.
+21:14:55 INFO  : XSCT server has started successfully.
+21:14:55 INFO  : plnx-install-location is set to ''
+21:14:56 INFO  : Successfully done setting XSCT server connection channel  
+21:14:56 INFO  : Successfully done query RDI_DATADIR 
+21:14:56 INFO  : Successfully done setting workspace for the tool. 

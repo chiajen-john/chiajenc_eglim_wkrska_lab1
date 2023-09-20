@@ -48,3 +48,6 @@ timestamp=[2023-09-19 16:59:26], mode=BUILD, duration=0:00:28.289, duration_ms=2
 timestamp=[2023-09-19 16:59:26], mode=BUILD, duration=0:00:00.183, duration_ms=183, data={name=mmm_kernels, configuration=Emulation-SW, clean_build=false}
 timestamp=[2023-09-19 16:59:32], mode=BUILD, duration=0:00:03.992, duration_ms=3992, data={name=mmm_vadd_dfx, configuration=Emulation-SW, clean_build=false}
 timestamp=[2023-09-19 16:59:33], mode=BUILD, duration=0:00:00.176, duration_ms=176, data={name=vadd_kernels, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-09-19 21:14:50], mode=WORKBENCH_START, duration=0:00:08.756, duration_ms=8756, data={}
+timestamp=[2023-09-19 21:14:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.597, duration_ms=597, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-09-19 21:14:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.668, duration_ms=1668, data={}
