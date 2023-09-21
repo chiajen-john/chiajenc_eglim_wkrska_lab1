@@ -1,0 +1,9 @@
+Ultra96
+Sysroot: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/sysroot/cortexa72-cortexa53-xilinx-linux
+Root FS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/rootfs/rootfs.ext4
+Image  : /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/platforms/2021.1/cmu_u96v2_dfx_full/sw/cmu_u96v2_dfx_full/linux_domain/image/Image
+
+Petalinux
+Sysroot: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/petalinux/2021.1/sysroots/cortexa72-cortexa53-xilinx-linux
+Root FS: /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/petalinux/2021.1/rootfs.ext4
+Image  : /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/petalinux/2021.1/Image

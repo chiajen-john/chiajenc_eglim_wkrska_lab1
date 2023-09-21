@@ -117,7 +117,7 @@ std::string xclbinFilename[7] = {
 
         krnl_object exp1a_obj;
         exp1a_obj.index = 2;
-        exp1a_obj.name = "exp1a";
+        exp1a_obj.name = "krnl_exp1a";
 
         float *ptr_in;
 
@@ -133,17 +133,17 @@ std::string xclbinFilename[7] = {
     {
         read_xclbin(xclbinFilename[3], cl_obj.bins);
 
-        krnl_object exp1b;
+        krnl_object exp1b_obj;
         exp1b.index = 3;
-        exp1b.name = "exp1b";
+        exp1b.name = "krnl_exp1b";
 
         float *ptr_in;
 
-        program_kernel(cl_obj, exp1b);
-        exp1_allocate_mem(cl_obj, exp1b, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
+        program_kernel(cl_obj, exp1b_obj);
+        exp1_allocate_mem(cl_obj, exp1b_obj, &ptr_in, EXP_DIM * EXP_DIM * sizeof(float));
         initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        exp1_run_kernel(cl_obj, exp1b);
-        exp1_deallocate_mem(cl_obj, exp1b, ptr_in);
+        exp1_run_kernel(cl_obj, exp1b_obj);
+        exp1_deallocate_mem(cl_obj, exp1b_obj, ptr_in);
         std::cout << "exp1b completed\n\n";
     }
 #endif
@@ -155,7 +155,7 @@ std::string xclbinFilename[7] = {
 
         krnl_object exp2a_obj;
         exp2a_obj.index = 4;
-        exp2a_obj.name = "exp2a";
+        exp2a_obj.name = "krnl_exp2a";
 
         float *ptr_result;
 
@@ -173,7 +173,7 @@ std::string xclbinFilename[7] = {
 
         krnl_object exp2b_obj;
         exp2b_obj.index = 5;
-        exp2b_obj.name = "exp2b";
+        exp2b_obj.name = "krnl_exp2b";
 
         float *ptr_result;
 
@@ -191,7 +191,7 @@ std::string xclbinFilename[7] = {
 
         krnl_object exp3_obj;
         exp3_obj.index = 6;
-        exp3_obj.name = "exp3";
+        exp3_obj.name = "krnl_exp3";
 
         int *ptr_in;
 

@@ -1,164 +1,63 @@
-!SESSION 2023-09-19 21:10:00.248 -----------------------------------------------
+!SESSION 2023-09-21 14:30:46.203 -----------------------------------------------
 eclipse.buildId=2021.1
 java.version=11.0.2
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY org.eclipse.ui 4 4 2023-09-19 21:14:45.436
+!ENTRY org.eclipse.ui 4 4 2023-09-21 14:31:01.761
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+!SESSION 2023-09-21 14:34:05.282 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2023-09-21 14:34:14.793
 !MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:55.819
-!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:24.419
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-8
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:55.820
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:24.420
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:55.822
-!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:24.420
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-22
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:55.827
-!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:24.429
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-8
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.817
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.286
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.817
-!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.286
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-22
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.819
-!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.299
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.819
-!MESSAGE XSCT Command: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.301
+!MESSAGE XSCT Command: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Thread: Thread-22
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.820
-!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data]. Thread: Worker-0: Initializing s/w repositories
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.302
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /afs/ece.cmu.edu/class/ece643/software/xilinxVitis/Vitis/2021.1/data]. Thread: Worker-2: Initializing s/w repositories
 
-!ENTRY com.xilinx.sdk.utils 0 0 2023-09-19 21:14:56.822
-!MESSAGE XSCT command with result: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Result: [null, ]. Thread: Thread-21
+!ENTRY com.xilinx.sdk.utils 0 0 2023-09-21 14:34:25.302
+!MESSAGE XSCT command with result: [setws /scratch/643_vitis_wkrska/chiajenc_eglim_wkrska_lab1], Result: [null, ]. Thread: Thread-22
 
-!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-09-19 21:15:01.284
-!MESSAGE 
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
-	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
-	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
-	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
-	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
-	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
-	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
-	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1336)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1270)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$0(StackRenderer.java:1256)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.close(StackRenderer.java:1128)
-	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1955)
-	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:335)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
-	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
-
-!ENTRY org.eclipse.launchbar.core 2 0 2023-09-19 21:16:51.534
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-21 14:42:18.192
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2023-09-19 21:16:51.535
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-21 14:42:18.194
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2023-09-19 21:16:51.536
+!ENTRY org.eclipse.launchbar.core 2 0 2023-09-21 14:42:18.195
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:51.949
-!MESSAGE Indexed 'exp1b_kernels' (1 sources, 0 headers) in 0.474 sec: 5 declarations; 11 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY com.xilinx.sdx.core 1 0 2023-09-21 14:50:16.028
+!MESSAGE Build step failed, canceling full build chain.
 
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:51.982
-!MESSAGE Indexed 'exp2a_kernels' (1 sources, 0 headers) in 0.024 sec: 8 declarations; 18 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:51.987
-!MESSAGE Indexed 'mmm_vadd_dfx_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:51.993
-!MESSAGE Indexed 'mmm_vadd_dfx_system_hw_link' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:52.025
-!MESSAGE Indexed 'mmm_kernels' (1 sources, 0 headers) in 0.026 sec: 8 declarations; 21 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:52.065
-!MESSAGE Indexed 'vadd_kernels' (1 sources, 0 headers) in 0.033 sec: 14 declarations; 34 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:52.125
-!MESSAGE Indexed 'exp3_kernels' (1 sources, 0 headers) in 0.046 sec: 5 declarations; 59 references; 0 unresolved inclusions; 0 syntax errors; 17 unresolved names (21%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:58.651
-!MESSAGE Indexed 'mmm_vadd_dfx' (7 sources, 156 headers) in 6.51 sec: 30,434 declarations; 25,080 references; 2 unresolved inclusions; 641 syntax errors; 15,586 unresolved names (22%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:58.671
-!MESSAGE Indexed 'exp2b_kernels' (1 sources, 0 headers) in 0.013 sec: 14 declarations; 21 references; 0 unresolved inclusions; 1 syntax errors; 1 unresolved names (2.8%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2023-09-19 21:16:58.683
-!MESSAGE Indexed 'exp1a_kernels' (1 sources, 0 headers) in 0.006 sec: 10 declarations; 25 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY com.xilinx.sdx.core 1 0 2023-09-21 14:50:44.556
+!MESSAGE Build step failed, canceling full build chain.

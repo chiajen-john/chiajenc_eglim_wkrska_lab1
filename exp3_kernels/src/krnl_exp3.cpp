@@ -15,7 +15,7 @@
 
 #define DATA_DIM 4096
 #define DATA_SIZE DATA_DIM*DATA_DIM
-#define STRIDE 32
+#define STRIDE 256
 
 extern "C" {
 void krnl_exp3(const int *in   // Read-Only Matrix
