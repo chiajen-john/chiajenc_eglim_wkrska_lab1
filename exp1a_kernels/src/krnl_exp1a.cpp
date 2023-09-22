@@ -19,7 +19,7 @@ void krnl_exp1a(const float *in        // Read-Only Matrix
 ) 
     {
 		int chunk_size;
-		float v_buffer[BUFFER_SIZE];   // Local memory to store vector
+		volatile float v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
         for (int k = 0; k < DATA_DIM; k += 1) {
         	for (int i = 0; i < DATA_DIM; i += BUFFER_SIZE) {
