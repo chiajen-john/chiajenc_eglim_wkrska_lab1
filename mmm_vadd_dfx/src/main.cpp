@@ -128,14 +128,16 @@ std::string xclbinFilename[7] = {
         exp1_deallocate_mem(cl_obj, exp1a_obj, ptr_in);
         std::cout << "exp1a completed\n\n";
     }
+#endif
+#if 0
 
     // Exp 1b
     {
         read_xclbin(xclbinFilename[3], cl_obj.bins);
 
         krnl_object exp1b_obj;
-        exp1b.index = 3;
-        exp1b.name = "krnl_exp1b";
+        exp1b_obj.index = 3;
+        exp1b_obj.name = "krnl_exp1b";
 
         float *ptr_in;
 
