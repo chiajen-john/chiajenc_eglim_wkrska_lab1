@@ -10,12 +10,12 @@
 #define DATA_DIM 4096
 #define DATA_SIZE DATA_DIM*DATA_DIM
 
-//TRIPCOUNT identifier
 const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
 const unsigned int c_size = BUFFER_SIZE;
 
 extern "C" {
-void krnl_exp1a(const float *in        // Read-Only Matrix
+void krnl_exp1a(const float *in,        // Read-Only Matrix
+		float *out
 ) 
     {
 		int chunk_size;
@@ -30,6 +30,10 @@ void krnl_exp1a(const float *in        // Read-Only Matrix
         	    	#pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
         	        	v_buffer[j] = in[k * DATA_DIM + i + j]; // in[k][i * BUFFER_SIZE + j]
         	    }
+        	    for (int j = 0; j < chunk_size; j++) {
+        	    	out[0] += v_buffer[j]; // accumulate
+        	    }
+
         	}
         }
     }

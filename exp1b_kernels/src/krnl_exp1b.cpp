@@ -6,19 +6,34 @@
 //
 
 // Update values when needed!!
-#define BUFFER_SIZE 64
+#define BUFFER_SIZE 256
 #define DATA_DIM 4096
+#define DATA_SIZE DATA_DIM*DATA_DIM
+
+const unsigned int c_len = DATA_SIZE / BUFFER_SIZE;
+const unsigned int c_size = BUFFER_SIZE;
 
 extern "C" {
-void krnl_exp1b(const float *in        // Read-Only Matrix
+void krnl_exp1b(const float *in ,       // Read-Only Matrix
+		float *out
 ) 
     {
-        volatile float c[BUFFER_SIZE]; // local variable to store matrix entry
+		int chunk_size;
+		volatile float v_buffer[BUFFER_SIZE];   // Local memory to store vector
 
-	    for (int i = 0; i < DATA_DIM; i++) { // iterates columns
-            for (int j = 0; j < DATA_DIM; j++) {
-            	c[j % BUFFER_SIZE] = in[i + j * DATA_DIM ]; // in[j][i]
-            }
-        }
+		for (int k = 0; k < DATA_DIM; k += 1) {
+			for (int i = 0; i < DATA_DIM; i += BUFFER_SIZE) {
+				#pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
+				chunk_size = BUFFER_SIZE;
+				// read through a column by chunk_size
+				for (int j = 0; j < chunk_size; j++) {
+					#pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
+					v_buffer[j] = in[k + DATA_DIM * (i + j)];
+	        	}
+				for (int j = 0; j < chunk_size; j++) {
+					out[0] += v_buffer[j];
+				}
+	        }
+		}
     }
 }
