@@ -2,7 +2,7 @@
 #include <sys/time.h>
 
 // Allocate memory on device and map pointers into the host
-void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_out, int size_in_bytes) {
+void exp2_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_out, int size_in_bytes) {
     cl_int err;
 
     // These commands will allocate memory on the Device. The cl::Buffer objects can
@@ -16,7 +16,7 @@ void exp_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_out
 }
 
 // Unmap device memory when done
-void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_out) {
+void exp2_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_out) {
     cl_int err;
 
     cl::Buffer *buf_out = &krnl_obj.buffers[0];
@@ -26,7 +26,7 @@ void exp_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_ou
 }
 
 // Set kernel arguments and execute it
-void exp_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
+void exp2_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     cl_int err;
 
     // Copied directly from vadd example
