@@ -5,8 +5,8 @@
 // Purpose: Determine memory bandwidth by writing row-by-row
 //
 
-//#define DATA_DIM 4096
-#define DATA_DIM 128
+#define DATA_DIM 4096
+//#define DATA_DIM 128
 
 extern "C" {
 
