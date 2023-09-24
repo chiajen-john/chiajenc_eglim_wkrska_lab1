@@ -56,10 +56,11 @@ void exp1_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     OCL_CHECK(err, err = cl_obj.q.enqueueMigrateMemObjects({*buffer_in},0/* 0 means from host*/));
     OCL_CHECK(err, cl_obj.q.finish());
 
-    // Get "compute" runtime start time
-    gettimeofday(&start_time, NULL);
     std::cout << "Data loaded" << std::endl;
     std::cout << "Start captured" << std::endl;
+
+    // Get "compute" runtime start time
+    gettimeofday(&start_time, NULL);
 
     // Queue start of kernel, wait until finished
     OCL_CHECK(err, err = cl_obj.q.enqueueTask(krnl_obj.krnl));
