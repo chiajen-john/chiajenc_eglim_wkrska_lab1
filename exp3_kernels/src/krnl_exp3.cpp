@@ -13,22 +13,35 @@
         size  (input)     --> Dimension of Matrix in Integer
  */
 
-#define DATA_DIM 4096
-#define DATA_SIZE DATA_DIM*DATA_DIM
-#define STRIDE 256
+#define NUM_ITER 4096
+
+// 4096 * 4096 = 2^24 elements in array
+// use lower 24 bits of random int as address
+// can just AND with 0x00FFFFFF
+#define ADDR_AND 16777215
 
 extern "C" {
-void krnl_exp3(const int *in   // Read-Only Matrix
-) 
-    {
-        volatile int temp = 0; // Ensures the variable is written to
 
-        #pragma unroll
-        for (int i = 0; i < STRIDE; i++) { // for every starting position [0, STRIDE)...
-            #pragma unroll
-            for (int j = i; j < DATA_SIZE; j += STRIDE) { // Read STRIDE 
-                temp = in[j];
-            }
-        }
-    }
+int xorshift(int num) {
+  num ^= num << 13;
+  num ^= num >> 17;
+  num ^= num << 5;
+  return num;
+}
+
+void krnl_exp3(const int *in,   // Read-Only Matrix
+               int *out) {
+  int addr = ADDR_AND & 852129405; 
+  int accum = -1877593432;
+  int temp;
+
+  // TODO: initialize memory w/ random values before calling kernel
+  for (int i = 0; i < NUM_ITER; i++) {
+    temp = in[addr];
+    addr = ADDR_AND & xorshift(temp);
+    accum ^= temp;
+  }
+
+  out[0] = accum;
+}
 }

@@ -75,8 +75,19 @@ void exp1_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     OCL_CHECK(err, cl_obj.q.finish());
 
     // Print runtimes
+    //double timeusec = (end_time.tv_sec - start_time.tv_sec) * 1e6 +
+    //                (end_time.tv_usec - start_time.tv_usec);
+
+    //std::cout << "Runtime: " << timeusec << std::endl;
+
     double timeusec = (end_time.tv_sec - start_time.tv_sec) * 1e6 +
                     (end_time.tv_usec - start_time.tv_usec);
+    double total_bytes = 4096 * 4096 * 4;
+    double bytes_per_gigabyte = 1073741824;
+    double total_gigabytes = total_bytes / bytes_per_gigabyte;
+    double timesec = timeusec * 1e-6;
+    double gigabytes_per_second = total_gigabytes / timesec;
 
-    std::cout << "Runtime: " << timeusec << std::endl;
+    std::cout << "Runtime (usec): " << timeusec << std::endl;
+    std::cout << "GB per second: " << gigabytes_per_second << std::endl;
 }

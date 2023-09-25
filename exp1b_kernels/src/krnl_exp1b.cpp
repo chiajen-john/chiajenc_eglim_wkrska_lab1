@@ -10,20 +10,20 @@
 #define DATA_SIZE DATA_DIM*DATA_DIM
 
 extern "C" {
-void krnl_exp1b(const float *in ,       // Read-Only Matrix
-		float *out
-) 
-    {
-		float acc = 0; // register
-
-		for (int k = 0; k < DATA_DIM; k += 1) {
-			#pragma HLS unroll factor=16
-			for (int i = 0; i < DATA_DIM; i += 1) {
-				#pragma HLS unroll factor=16
-				acc += in[k + DATA_DIM * i]; // in[i][k]
-	        }
-		}
-
-		out[0] = acc;
-    }
+void krnl_exp1b(const float *in,       // Read-Only Matrix
+		float *out) {
+  out[0] = in[0];
+//
+//	float acc = 0; // register
+//
+//	for (int k = 0; k < DATA_DIM; k += 1) {
+//		#pragma HLS unroll factor=16
+//		for (int i = 0; i < DATA_DIM; i += 1) {
+//			#pragma HLS unroll factor=16
+//			acc += in[k + DATA_DIM * i]; // in[i][k]
+//        }
+//	}
+//
+//	out[0] = acc;
+}
 }
