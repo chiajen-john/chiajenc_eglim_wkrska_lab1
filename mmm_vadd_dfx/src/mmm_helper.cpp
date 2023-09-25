@@ -140,6 +140,14 @@ void mmm_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj, int dim) {
 
     std::cout << "End-to-end runtime: " << timeusec_full << std::endl;
     std::cout << "Arithmetic runtime: " << timeusec_compute << std::endl;
+
+    double num_ops = 4096 * 4096 * 4096 * 2;
+    double timesec_full = timeusec_full * 1e-6;
+    double timesec_compute = timeusec_compute * 1e-6;
+    double ops_per_sec_full = num_ops / timesec_full;
+    double ops_per_sec_compute = num_ops / timesec_compute;
+    std::cout << "End-to-end ops/sec: " << ops_per_sec_full << std::endl;
+    std::cout << "kernel-only ops/sec: " << ops_per_sec_compute << std::endl;
 }
 
 /*

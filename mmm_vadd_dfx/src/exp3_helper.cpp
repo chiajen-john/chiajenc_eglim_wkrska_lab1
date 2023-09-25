@@ -79,7 +79,10 @@ void exp3_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
                     (end_time.tv_usec - start_time.tv_usec);
     double NUM_READS = 4096;
     double usec_per_read = timeusec / NUM_READS;
+    double timesec = timeusec * 1e-6;
+    double sec_per_read = timesec / NUM_READS;
 
     std::cout << "Runtime (usec): " << timeusec << std::endl;
     std::cout << "usec_per_read: " << usec_per_read << std::endl;
+    std::cout << "seconds per read: " << sec_per_read << std::endl;
 }

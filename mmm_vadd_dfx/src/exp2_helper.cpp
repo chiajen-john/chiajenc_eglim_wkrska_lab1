@@ -77,7 +77,9 @@ void exp2_run_kernel(cl_object &cl_obj, krnl_object &krnl_obj) {
     double total_gigabytes = total_bytes / bytes_per_gigabyte;
     double timesec = timeusec * 1e-6;
     double gigabytes_per_second = total_gigabytes / timesec;
+    double bytes_per_second = total_bytes / timesec;
 
     std::cout << "Runtime (usec): " << timeusec << std::endl;
     std::cout << "GB per second: " << gigabytes_per_second << std::endl;
+    std::cout << "bytes per second: " << bytes_per_second << std::endl;
 }

@@ -41,6 +41,7 @@
 
 #define EXP_DIM 4096
 #define EXP2_DIM 4096
+#define MATMUL_DIM 640
 //#define EXP2_DIM 128
 
 #include "exp1_helper.h"
@@ -87,18 +88,19 @@ int main(int argc, char* argv[]) {
     }
 #endif
 
-#if 0
+#if 1
     {
         // Read mmm
         read_xclbin(xclbinFilename[1], cl_obj.bins);
 
         krnl_object mmm_obj;
-        mmm_obj.index = 1;
+        mmm_obj.index = 0;
         mmm_obj.name = "krnl_mmm";
 
         float *ptr_a, *ptr_b, *ptr_result;
 
-        int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        //int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
+        mmm_size = MATMUL_DIM;
         std::cout << "Size = " << mmm_size << std::endl;
 
         program_kernel(cl_obj, mmm_obj);
@@ -118,7 +120,7 @@ int main(int argc, char* argv[]) {
         read_xclbin(xclbinFilename[2], cl_obj.bins);
 
         krnl_object exp1a_obj;
-        exp1a_obj.index = 0;
+        exp1a_obj.index = 1;
         exp1a_obj.name = "krnl_exp1a";
 
         int *ptr_in, *ptr_out;
@@ -140,7 +142,7 @@ int main(int argc, char* argv[]) {
         read_xclbin(xclbinFilename[3], cl_obj.bins);
 
         krnl_object exp1b_obj;
-        exp1b_obj.index = 1; // 3;
+        exp1b_obj.index = 2; // 3;
         exp1b_obj.name = "krnl_exp1b";
 
         int *ptr_in, *ptr_out;
@@ -161,7 +163,7 @@ int main(int argc, char* argv[]) {
         read_xclbin(xclbinFilename[4], cl_obj.bins);
 
         krnl_object exp2a_obj;
-        exp2a_obj.index = 2;
+        exp2a_obj.index = 3;
         exp2a_obj.name = "krnl_exp2a";
 
         int *ptr_result;
@@ -179,7 +181,7 @@ int main(int argc, char* argv[]) {
         read_xclbin(xclbinFilename[5], cl_obj.bins);
 
         krnl_object exp2b_obj;
-        exp2b_obj.index = 3;
+        exp2b_obj.index = 4;
         exp2b_obj.name = "krnl_exp2b";
 
         int *ptr_result;
@@ -197,7 +199,7 @@ int main(int argc, char* argv[]) {
         read_xclbin(xclbinFilename[6], cl_obj.bins);
 
         krnl_object exp3_obj;
-        exp3_obj.index = 4;
+        exp3_obj.index = 5;
         exp3_obj.name = "krnl_exp3";
 
         int *ptr_in, *ptr_out;

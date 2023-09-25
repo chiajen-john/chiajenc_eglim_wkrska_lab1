@@ -48,16 +48,21 @@
         size  (input)     --> Dimension of Matrix in Integer
  */
 
+#define DATA_DIM 640 
+
 extern "C" {
 void krnl_mmm(const float *in1,  // Read-Only Matrix 1
         const float *in2,      // Read-Only Matrix 2
         float *out_r,          // Output Result
-        int size                      // Dimension in integer
-) {
-	for (int k = 0; k < size; k += 1){
-		for (int i = 0; i < size; i += 1) {
-			for (int j = 0; j < size; j += 1) {
-				out_r[i * size + j] += in1[i * size + k] * in2[k * size + j];
+        int size) {
+
+
+
+  //out_r[0] = in1[0];
+	for (int k = 0; k < DATA_DIM; k += 1){
+		for (int i = 0; i < DATA_DIM; i += 1) {
+			for (int j = 0; j < DATA_DIM; j += 1) {
+				out_r[i * DATA_DIM + j] += in1[i * DATA_DIM + k] * in2[k * DATA_DIM + j];
 			}
 		}
 	}

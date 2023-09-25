@@ -72,29 +72,31 @@ void krnl_vadd(const unsigned int *in1, // Read-Only Vector 1
           int size                 // Size in integer
 ) {
 
-    unsigned int v1_buffer[BUFFER_SIZE];   // Local memory to store vector1
+  out_r[0] = in1[0];
 
-    //Per iteration of this loop perform BUFFER_SIZE vector addition
-    for (int i = 0; i < size; i += BUFFER_SIZE) {
-       #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
-        int chunk_size = BUFFER_SIZE;
-        //boundary checks
-        if ((i + BUFFER_SIZE) > size)
-            chunk_size = size - i;
-
-        read1: for (int j = 0; j < chunk_size; j++) {
-           #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
-            v1_buffer[j] = in1[i + j];
-        }
-
-        //Burst reading B and calculating C and Burst writing 
-        // to  Global memory
-        vadd_writeC: for (int j = 0; j < chunk_size; j++) {
-           #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
-            //perform vector addition
-            out_r[i+j] = v1_buffer[j] + in2[i+j];
-        }
-
-    }
+//    unsigned int v1_buffer[BUFFER_SIZE];   // Local memory to store vector1
+//
+//    //Per iteration of this loop perform BUFFER_SIZE vector addition
+//    for (int i = 0; i < size; i += BUFFER_SIZE) {
+//       #pragma HLS LOOP_TRIPCOUNT min=c_len max=c_len
+//        int chunk_size = BUFFER_SIZE;
+//        //boundary checks
+//        if ((i + BUFFER_SIZE) > size)
+//            chunk_size = size - i;
+//
+//        read1: for (int j = 0; j < chunk_size; j++) {
+//           #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
+//            v1_buffer[j] = in1[i + j];
+//        }
+//
+//        //Burst reading B and calculating C and Burst writing 
+//        // to  Global memory
+//        vadd_writeC: for (int j = 0; j < chunk_size; j++) {
+//           #pragma HLS LOOP_TRIPCOUNT min=c_size max=c_size
+//            //perform vector addition
+//            out_r[i+j] = v1_buffer[j] + in2[i+j];
+//        }
+//
+//    }
 }
 }
