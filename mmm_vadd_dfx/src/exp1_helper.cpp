@@ -2,24 +2,24 @@
 #include <sys/time.h>
 
 // Allocate memory on device and map pointers into the host
-void exp1_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float **ptr_in, float **ptr_out, int size_in_bytes) {
+void exp1_allocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, int **ptr_in, int **ptr_out, int size_in_bytes) {
     cl_int err;
 
     // These commands will allocate memory on the Device. The cl::Buffer objects can
     // be used to reference the memory locations on the device.
     OCL_CHECK(err, krnl_obj.buffers.emplace_back(cl_obj.context, CL_MEM_READ_ONLY, size_in_bytes, nullptr, &err)); // in
-    OCL_CHECK(err, krnl_obj.buffers.emplace_back(cl_obj.context, CL_MEM_READ_WRITE, 1 * sizeof(float), nullptr, &err)); // out
+    OCL_CHECK(err, krnl_obj.buffers.emplace_back(cl_obj.context, CL_MEM_READ_WRITE, 1 * sizeof(int), nullptr, &err)); // out
 
     cl::Buffer *buffer_in = &krnl_obj.buffers[0];
     cl::Buffer *buffer_out = &krnl_obj.buffers[1];
 
     //We then need to map our OpenCL buffers to get the pointers
-    OCL_CHECK(err, (*ptr_in) = (float*)cl_obj.q.enqueueMapBuffer (*buffer_in , CL_TRUE , CL_MAP_WRITE , 0, size_in_bytes, NULL, NULL, &err));
-    OCL_CHECK(err, (*ptr_out) = (float*)cl_obj.q.enqueueMapBuffer (*buffer_out , CL_TRUE , CL_MAP_READ , 0, 1 * sizeof(float), NULL, NULL, &err));
+    OCL_CHECK(err, (*ptr_in) = (int*)cl_obj.q.enqueueMapBuffer (*buffer_in , CL_TRUE , CL_MAP_WRITE , 0, size_in_bytes, NULL, NULL, &err));
+    OCL_CHECK(err, (*ptr_out) = (int*)cl_obj.q.enqueueMapBuffer (*buffer_out , CL_TRUE , CL_MAP_READ , 0, 1 * sizeof(int), NULL, NULL, &err));
 }
 
 // Unmap device memory when done
-void exp1_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, float *ptr_in, float *ptr_out) {
+void exp1_deallocate_mem (cl_object &cl_obj, krnl_object &krnl_obj, int *ptr_in, int *ptr_out) {
     cl_int err;
 
     cl::Buffer *buffer_in = &krnl_obj.buffers[0];

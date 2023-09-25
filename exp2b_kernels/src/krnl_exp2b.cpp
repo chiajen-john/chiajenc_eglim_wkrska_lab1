@@ -17,7 +17,7 @@ int xorshift(int num) {
   return num;
 }
 
-void krnl_exp2b(float *out) {
+void krnl_exp2b(int *out) {
 
   int num00 = 852129405;
   int num01 = 1297230771;

@@ -121,12 +121,12 @@ int main(int argc, char* argv[]) {
         exp1a_obj.index = 0;
         exp1a_obj.name = "krnl_exp1a";
 
-        float *ptr_in, *ptr_out;
+        int *ptr_in, *ptr_out;
 
         program_kernel(cl_obj, exp1a_obj);
-        exp1_allocate_mem(cl_obj, exp1a_obj, &ptr_in, &ptr_out, EXP_DIM * EXP_DIM * sizeof(float));
-        initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        initialize_memory_fp(ptr_out, 1);
+        exp1_allocate_mem(cl_obj, exp1a_obj, &ptr_in, &ptr_out, EXP_DIM * EXP_DIM * sizeof(int));
+        initialize_memory_int(ptr_in, EXP_DIM * EXP_DIM);
+        initialize_memory_int(ptr_out, 1);
         exp1_run_kernel(cl_obj, exp1a_obj);
         exp1_deallocate_mem(cl_obj, exp1a_obj, ptr_in, ptr_out);
         std::cout << "exp1a completed\n\n";
@@ -143,12 +143,12 @@ int main(int argc, char* argv[]) {
         exp1b_obj.index = 1; // 3;
         exp1b_obj.name = "krnl_exp1b";
 
-        float *ptr_in, *ptr_out;
+        int *ptr_in, *ptr_out;
 
         program_kernel(cl_obj, exp1b_obj);
-        exp1_allocate_mem(cl_obj, exp1b_obj, &ptr_in, &ptr_out, EXP_DIM * EXP_DIM * sizeof(float));
-        initialize_memory_fp(ptr_in, EXP_DIM * EXP_DIM);
-        initialize_memory_fp(ptr_out, 1);
+        exp1_allocate_mem(cl_obj, exp1b_obj, &ptr_in, &ptr_out, EXP_DIM * EXP_DIM * sizeof(int));
+        initialize_memory_int(ptr_in, EXP_DIM * EXP_DIM);
+        initialize_memory_int(ptr_out, 1);
         exp1_run_kernel(cl_obj, exp1b_obj);
         exp1_deallocate_mem(cl_obj, exp1b_obj, ptr_in, ptr_out);
         std::cout << "exp1b completed\n\n";
@@ -164,10 +164,10 @@ int main(int argc, char* argv[]) {
         exp2a_obj.index = 2;
         exp2a_obj.name = "krnl_exp2a";
 
-        float *ptr_result;
+        int *ptr_result;
 
         program_kernel(cl_obj, exp2a_obj);
-        exp2_allocate_mem(cl_obj, exp2a_obj, &ptr_result, EXP2_DIM * EXP2_DIM * sizeof(float));
+        exp2_allocate_mem(cl_obj, exp2a_obj, &ptr_result, EXP2_DIM * EXP2_DIM * sizeof(int));
         exp2_run_kernel(cl_obj, exp2a_obj);
         exp2_deallocate_mem(cl_obj, exp2a_obj, ptr_result);
     }
@@ -182,10 +182,10 @@ int main(int argc, char* argv[]) {
         exp2b_obj.index = 3;
         exp2b_obj.name = "krnl_exp2b";
 
-        float *ptr_result;
+        int *ptr_result;
 
         program_kernel(cl_obj, exp2b_obj);
-        exp2_allocate_mem(cl_obj, exp2b_obj, &ptr_result, EXP2_DIM * EXP2_DIM * sizeof(float));
+        exp2_allocate_mem(cl_obj, exp2b_obj, &ptr_result, EXP2_DIM * EXP2_DIM * sizeof(int));
         exp2_run_kernel(cl_obj, exp2b_obj);
         exp2_deallocate_mem(cl_obj, exp2b_obj, ptr_result);
     }
