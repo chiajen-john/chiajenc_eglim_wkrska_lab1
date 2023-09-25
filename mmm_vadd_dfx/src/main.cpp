@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
         float *ptr_a, *ptr_b, *ptr_result;
 
         //int mmm_size = (atoi(argv[argc-1])) ? MMM_DIM : atoi(argv[argc-1]);
-        mmm_size = MATMUL_DIM;
+        int mmm_size = MATMUL_DIM;
         std::cout << "Size = " << mmm_size << std::endl;
 
         program_kernel(cl_obj, mmm_obj);
